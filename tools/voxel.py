@@ -1,4 +1,4 @@
-"""Voxels for gen_monet.py: textured isometric blocks (2.5D) and a baked orbiting camera (3D).
+"""Voxels for gen_profile.py: textured isometric blocks and a baked orbiting perspective camera.
 
 World axes: x and y on the ground, z up. The viewer sits in the +x/+y/+z octant, so only the top (+z),
 right (+x) and left (+y) faces can show, and painter's order is simply x+y+z.
@@ -6,7 +6,7 @@ right (+x) and left (+y) faces can show, and painter's order is simply x+y+z.
 Isometric faces are filled with <pattern>s whose patternTransform maps the 8x8 texture onto the face's
 lattice; because every cube corner lies on that lattice, one pattern per (texture, face) serves every block
 in every iso scene. The 3D camera can't use patterns (its face transforms change every frame), so there
-faces are flat Monet colours whose paths are keyframed, thinned with a Douglas-Peucker-style pass.
+faces are flat painterly colours whose paths are keyframed, thinned with a Douglas-Peucker-style pass.
 """
 import math
 
@@ -126,7 +126,7 @@ def iso_svg(defs, vox, wrap=None, heads=None):
         elif heads and key in heads:
             rows = heads[key][1]
             col = mc.hx("#" + rows[0][6:12]) if face == "top" else mc.hx("#" + rows[3][42:48])
-            fill = mc.to_hex(mc.monet_shade(col, SHADE[face]))
+            fill = mc.to_hex(mc.tinted_shade(col, SHADE[face]))
         else:
             fill = f"url(#{defs.pattern(b, face)})"
         extra = ' fill-opacity="0.82"' if b == "water" else ""
@@ -161,7 +161,7 @@ def face_color(b, face, x, y, z):
     base = mc.avg(top if face == "top" else side)
     j = ((x * 73856093) ^ (y * 19349663) ^ (z * 83492791)) % 1000 / 1000.0 - 0.5
     c = tuple(v * (1 + j * 0.2) for v in base)
-    c = mc.monet_shade(c, {"right": 0.86, "left": 0.72}[face]) if face != "top" else mc.monet_light(c, 0.2)
+    c = mc.tinted_shade(c, {"right": 0.86, "left": 0.72}[face]) if face != "top" else mc.warm_light(c, 0.2)
     return mc.to_hex(c)
 
 
