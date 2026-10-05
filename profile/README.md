@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://levimc.org">
-    <img src="./levimc-monet.svg" width="100%" alt="LeviMC: Monet Edition — a Minecraft world painted in Monet's style that grows from 2D to isometric to 3D: the history from LiteLoaderBDS to LeviLamina, LeviLamina, LegacyScriptEngine, LeviStone, LeviLaunchroid and LeviLauncher, mods, tooling, the people and live statistics, refreshed weekly." />
+    <img src="./levimc-profile.svg" width="100%" alt="LeviMC — the history from LiteLoaderBDS to LeviLamina, LeviLamina, LegacyScriptEngine, LeviStone, LeviLaunchroid and LeviLauncher, mods, tooling, the people and live statistics." />
   </a>
 </p>
 

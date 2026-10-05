@@ -1,4 +1,4 @@
-"""A Minecraft-flavoured 5x7 bitmap font (variable width, 2-row descenders) for gen_monet.py."""
+"""A Minecraft-flavoured 5x7 bitmap font (variable width, 2-row descenders) for gen_profile.py."""
 
 _G = {
     "A": ".###.|#...#|#...#|#####|#...#|#...#|#...#",

@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
-"""Generate "LeviMC: Monet Edition" -- the org-profile animation (profile/levimc-monet.svg).
+"""Generate the LeviMC org-profile animation (profile/levimc-profile.svg).
 
-A Minecraft world painted in Monet's broken colour that grows a dimension as LeviMC grows:
-  2D    -- 2021-2026 as a side-scrolling walk through six biomes (the LiteLoaderBDS years);
-  2.5D  -- the camera swings up into textured isometric islands, one per project (the LeviLamina era);
-  3D    -- a perspective, orbiting camera for the numbers and the finale.
-Minecraft's own UI carries the story: title screen, /title, chat, advancement toasts, scoreboard,
-crafting and brewing GUIs, item tooltips, the hotbar. Live numbers come from tools/data.json
-(refreshed weekly by .github/workflows/refresh-profile.yml). GitHub shows README images through <img>,
-so everything runs on one SMIL clock: no JavaScript, no web fonts, no external resources.
+A Minecraft world with a painterly palette. It opens as a side-scrolling 2D walk through 2021-2026, swings
+the camera up into textured isometric islands for each project, and ends with an orbiting perspective
+camera for the statistics and the finale. Minecraft's own UI carries the content: title screen, /title,
+chat, advancement toasts, scoreboard, crafting and brewing GUIs, item tooltips, the hotbar.
+Live numbers come from tools/data.json (refreshed by .github/workflows/refresh-profile.yml).
+GitHub shows README images through <img>, so everything runs on one SMIL clock: no JavaScript,
+no web fonts, no external resources.
 
-    python3 tools/gen_monet.py            # writes profile/levimc-monet.svg
+    python3 tools/gen_profile.py          # writes profile/levimc-profile.svg
 """
 import json
 import math
@@ -309,7 +308,7 @@ def slot(x, y, s=44, u=2):
 
 
 def book(x, y, w, h):
-    """The book-and-quill page: Monet's cream paper, a leather edge."""
+    """The book-and-quill page: cream paper, a leather edge."""
     return (f'<rect x="{x - 6}" y="{y - 6}" width="{w + 12}" height="{h + 12}" fill="#6b4a24"/>'
             f'<rect x="{x - 3}" y="{y - 3}" width="{w + 6}" height="{h + 6}" fill="#8a6234"/>'
             f'<rect x="{x}" y="{y}" width="{w}" height="{h}" fill="#f3ead2"/>'
@@ -489,17 +488,17 @@ def mob(name, x, y, s):
 
 
 WALKER = {
-    "top": ["..hhhh..", ".hhhhhhh", "..HHHH..", "..ssss..", "..ssse..", "..sbsss.", "..bbbb..", ".ccccc..",
-            ".ccccc..", ".cCcccsB", ".cCccc.B", ".ccccc..", "..pppp.."],
+    "top": ["..HHHH..", ".HHHHHH.", ".HHHHHH.", ".Hssss..", "..ssse..", "..ssss..", "..mmss..", ".ccccc..",
+            ".ccccc..", ".cCcccs.", ".cCccc..", ".ccccc..", "..pppp.."],
     "a": [".pp..pp.", ".pp..pp.", ".kk..kk."],
     "b": ["...pp...", "...pp...", "...kk..."],
-    "pal": {"h": "#e2c878", "H": "#6a4a2a", "s": "#e0b090", "e": "#2a2a3a", "b": "#f2f0e8", "c": "#4a6ab0",
-            "C": "#3a5090", "p": "#5a5040", "k": "#2a2018", "B": "#8a5a30"},
+    "pal": {"H": "#3a2614", "s": "#c8946a", "e": "#3a3a8a", "m": "#8a5a3e", "c": "#2fa8b8",
+            "C": "#22808e", "p": "#3a3aa0", "k": "#4a4a4a"},
 }
 
 
 def walker(x, y, s, t_walk0, t_walk1):
-    """Claude Monet as a Minecraft player: straw hat, white beard, blue smock, brush in hand."""
+    """A Minecraft player walking: two leg frames and a bob."""
     top = sprite(WALKER["top"], WALKER["pal"], x, y, s)
     legs_y = y + 13 * s
     a = sprite(WALKER["a"], WALKER["pal"], x, legs_y, s)
@@ -512,7 +511,7 @@ def walker(x, y, s, t_walk0, t_walk1):
 
 
 def oak_sign(cx, ground, text, sub=None):
-    bw, bh = 104, 54
+    bw, bh = max(104, tw(sub) + 20 if sub else 0), 54
     x, y = cx - bw / 2, ground - 44 - bh
     planks = "".join(f'<rect x="{f(x)}" y="{f(y + k * 13.5)}" width="{bw}" height="1.5" fill="#8f7448"/>' for k in (1, 2, 3))
     out = (f'<rect x="{f(cx - 4)}" y="{f(ground - 46)}" width="8" height="46" fill="#6b5130"/>'
@@ -574,7 +573,7 @@ def particles(n, region, colors, seed, rise=60, size=6):
 
 
 def mc_clouds(seed, y0=40, n=4, dur=70):
-    """Minecraft's flat, blocky clouds, drifting across a Monet sky."""
+    """Minecraft's flat, blocky clouds."""
     r = random.Random(seed)
     out = []
     for _ in range(n):
@@ -584,25 +583,6 @@ def mc_clouds(seed, y0=40, n=4, dur=70):
                        for i_, j, w in cells)
         out.append(f'<g opacity="0.55"><animateTransform attributeName="transform" type="translate" dur="{dur}s" '
                    f'begin="-{r.uniform(0, dur):.1f}s" repeatCount="indefinite" values="-300 0;1300 0"/>{body}</g>')
-    return "".join(out)
-
-
-PLAQUES = []
-
-
-def plaque(numeral, title, after, t_in, t_out):
-    PLAQUES.append((numeral, title, after, t_in, t_out))
-
-
-def plaques_svg():
-    out = []
-    for numeral, title, after, t_in, t_out in PLAQUES:
-        txt = f"Plate {numeral}  ·  {title}  —  after Monet, {after}"
-        w = len(txt) * 5.9 + 26
-        body = (f'<rect x="20" y="556" width="{f(w)}" height="25" fill="#f1e8d2"/>'
-                f'<rect x="21.5" y="557.5" width="{f(w - 3)}" height="22" fill="none" stroke="#b08d4a" stroke-width="1.5"/>'
-                f'<text x="32" y="573" class="plq">{txt.replace("&", "&amp;")}</text>')
-        out.append(show(body, t_in, t_out, fade=0.4))
     return "".join(out)
 
 
@@ -722,12 +702,12 @@ def scene_title():
     out = [f'<g transform="translate(-40 0)">{canvas(WORLD_URI, w=mc.COLS * 40)}</g>',
            '<rect width="1200" height="600" fill="#1a1428" fill-opacity="0.38"/>']
     out.append(logo_text(600, 62, "LEVIMC", 15, 0.4, t1 - 0.3))
-    out.append(show(ptext(600, 188, "M O N E T   E D I T I O N", 3, "#f4e8c8", anchor="middle"), 1.0, t1 - 0.3))
+    out.append(show(ptext(600, 190, "OPEN-SOURCE BEDROCK MODDING", 2, "#f4e8c8", anchor="middle"), 1.0, t1 - 0.3))
     splashes = ["Since 2021!", f"{k_fmt(D['org']['stars'])} stars!", "Now on Android!", "Formerly LiteLDev!",
                 f"{LL_VER} is out!"]
     for i, s in enumerate(splashes):
         a, b = 1.4 + i * 2.0, 1.4 + (i + 1) * 2.0
-        body = (f'<g transform="translate(900 172) rotate(-18)"><g><animateTransform attributeName="transform" '
+        body = (f'<g transform="translate(960 150) rotate(-18)"><g><animateTransform attributeName="transform" '
                 f'type="scale" dur="0.5s" repeatCount="indefinite" values="1;1.08;1"/>'
                 f'{ptext(0, -10, s, 3, YELLOW, anchor="middle")}</g></g>')
         out.append(only(body, a, min(b, t1 - 0.3)))
@@ -751,26 +731,26 @@ def scene_title():
 
 
 YEARS = [
-    ("2021", "Seeds", "Poppy Plains", "Poppy Field (1873)", [
+    ("2021", "LiteLoader is born", "Poppy Plains", [
         ("2021-01-27", "chat", "<ShrBox> init", WHITE),
         ("2021-01-28", "toast", "LiteLoader 0.1.0", "grass"),
         ("2021-04-10", "toast", "LiteLoader 1.0.0", "book"),
         ("2021-12-09", "toast", "2.0 pre-release", "crafting")]),
-    ("2022", "Full bloom", "Tulip Farm", "Tulip Fields at Sassenheim (1886)", [
-        ("2022-02-11", "toast", "LLSE: JS & Lua", "potion:#f6d040"),
+    ("2022", "LiteLoaderBDS 2.x", "Tulip Farm", [
+        ("2022-02-11", "toast", "LiteLoaderBDS 2.1.0", "crafting"),
         ("2022-04-22", "toast", "LiteLoader.NET", "command"),
         ("2022-07-31", "toast", "ScriptX engine", "redstone"),
         ("2022-09-01", "toast", "Documentation site", "book")]),
-    ("2023", "The rebuild", "Birch River", "Poplars on the Epte (1891)", [
+    ("2023", "The LeviLamina rewrite", "Birch River", [
         ("2023-01-27", "chat", "<RimuruChan> proj: init LiteLoader branch", WHITE),
-        ("2023-03-20", "toast", "LLSE learns Python", "potion:#4a8ad8"),
+        ("2023-09-27", "toast", "LiteLoaderBDS 2.16.2", "book"),
         ("2023-03-28", "chat", "<RimuruChan> build: migrate to xmake", WHITE),
         ("2023-12-29", "toast", "LegacyScriptEngine", "potion:#f06ae0")]),
-    ("2024", "Winter work", "Snowy Taiga", "The Magpie (1869)", [
+    ("2024", "LeviLamina 0.x", "Snowy Taiga", [
         ("2024-01-24", "toast", "Crowdin translations", "paper")]),
-    ("2025", "Bridges", "Cherry Grove", "The Japanese Footbridge (1899)", [
+    ("2025", "LeviLamina 1.x", "Cherry Grove", [
         ("2025-01-14", "toast", "LeviStone", "eye")]),
-    ("2026", "Now", "Seaside Village", "Garden at Sainte-Adresse (1867)", [
+    ("2026", "LeviLamina 26.x", "Seaside Village", [
         ("2026-01-25", "toast", "Client support", "sprout")]),
 ]
 NEW_REPO_TOASTS = {"LeviOptimize": "feather", "MoreDimensions": "eye", "LeviAntiCheat": "shield",
@@ -814,7 +794,7 @@ def scene_history():
             created.setdefault(date[:4], []).append((date, name))
     joined = sorted((d, login) for login, (d, _repo) in D["joined"].items())
     marks = D.get("release_marks", [])
-    for k, (yr, title, biome, after, events) in enumerate(YEARS):
+    for k, (yr, title, _biome, events) in enumerate(YEARS):
         y0 = 12.5 + 11 * k
         y1 = y0 + 11.0 if k < 5 else t1
         out.append(mc_title(yr, title, y0 + 0.2, y0 + 2.8))
@@ -840,7 +820,7 @@ def scene_history():
             elif e[1] == "join":
                 chat.append((f"{e[2]} joined the game", YELLOW))
         if k == len(YEARS) - 1:
-            chat.append((f"<LeviMCBot> released LeviLamina {LL_VER}", AQUA))
+            chat.append((f"LeviLamina {LL_VER} released", AQUA))
         chat = chat[:8]
         if chat:
             step = min(1.2, 8.4 / max(1, len(chat)))
@@ -850,7 +830,6 @@ def scene_history():
         n_join = sum(1 for d, _l in joined if d.startswith(yr))
         rows = [("Commits", comma(commits)), ("New repos", str(n_new)), ("Joined", str(n_join))]
         out.append(scoreboard(976, 100, yr, rows, y0 + 0.8, y1 - 0.3))
-        plaque("II", biome, after, y0 if k else t0 + 0.4, y1)
     return scene("".join(out), t0, t1)
 
 
@@ -870,7 +849,7 @@ def scene_lamina():
     tgt = (3.5, 3.5, 1.0)
     cx, cy = 330, 300
     ox, oy = centred(cx, cy, tgt)
-    # 2D -> 2.5D: the camera swings from a flat side view up into isometric
+    # the camera swings from a flat side view up into isometric
     times, cams = [], []
     n = 48
     for i in range(n + 1):
@@ -881,7 +860,6 @@ def scene_lamina():
     svg, _ = vx.baked(vox, cams, times, T, kt, tol=0.8)
     out.append(only(svg, t0 - 0.7, m1 + 0.7))
     out.append(show(iso_group(vox, ox, oy), m1 - 0.2, t1 + 0.7, fade=0.5))
-    out.append(mc_title("A new dimension", "2D → 2.5D  ·  LiteLoaderBDS → LeviLamina", t0 + 0.3, m1 - 0.5, y=40, size=5))
     out.append(particles(14, (120, 160, 540, 330), ["#c8ff90", "#80ff20", "#ffffff"], 3))
     ta = m1 + 0.2
     out.append(mc_title("LeviLamina", "the mod loader for Bedrock", ta, ta + 2.4, y=34, size=5, col=GREEN))
@@ -938,7 +916,6 @@ def scene_lamina():
     row = "".join(head_flat(p, 664 + i * 40, 372, 28) for i, p in enumerate(heads))
     out.append(show(tooltip(650, 356, 510, 60) + row + ptext(664 + len(heads) * 40 + 8, 380, "most active", 2, GRAY),
                     tc + 2.6, t1 - 0.3, dy=8))
-    plaque("III", "The Crafting Island", "Water Lilies (1906)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -986,7 +963,6 @@ def scene_script():
     legacy = (tooltip(980, 436, 190, 78) + ptext(992, 446, "Also brewing:", 2, GOLD)
               + plines(992, 470, [("LegacyMoney", GREEN), ("LegacyRemoteCall", AQUA)], 2, 20))
     out.append(show(legacy, t0 + 5.6, t1 - 0.4, dy=10))
-    plaque("IV", "The Brewing Garden", "Irises in Monet's Garden (1900)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1040,7 +1016,6 @@ def scene_stone():
             (f"★ {R('LeviStone', 'stars')}  ·  {R('LeviStone', 'releases')} releases · {R('LeviStone', 'latest')}", YELLOW)]
     tt, _, _ = item_tooltip(640, 380, "LeviStone", lore, PINK)
     out.append(show(tt, t0 + 2.0, t1 - 0.4, dy=8))
-    plaque("V", "Portal to the End", "Charing Cross Bridge (1901)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1090,7 +1065,6 @@ def scene_launch():
         b_ = t0 + 4.2 + (i + 1) * 0.14 if i < len(steps) - 1 else t1 - 0.4
         out.append(only(ptext(bx_ + 170, by_ + 12, comma(v), 3, GOLD if i == len(steps) - 1 else WHITE, anchor="middle"),
                         a_, b_))
-    plaque("VI", "The Rail at Sunset", "Houses of Parliament, Sunset (1903)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1136,7 +1110,6 @@ def scene_mods():
     dls = "  ·  ".join(f"{n.replace('Levi', '')} {k_fmt(R(n, 'downloads'))}" for n, *_ in MODS if R(n, "downloads"))
     out.append(show(tooltip(30, 456, tw(dls) + 28, 60) + ptext(44, 466, "Release downloads", 2, GOLD)
                     + ptext(44, 490, dls, 2, WHITE), t0 + 4.0, t1 - 0.4, dy=8))
-    plaque("VII", "Five Pedestals", "Haystacks, End of Summer (1891)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1177,14 +1150,13 @@ def scene_tools():
         stars, dl = R(repo, "stars"), R(repo, "downloads")
         sub = f"{k_fmt(dl)} downloads" if dl else (f"★ {stars}" if stars else None)
         out.append(show(nametag(px, py - 60 - (i % 2) * 46, lab, sub), t0 + 2.4 + i * 0.15, t1 - 0.3, dy=6))
-    lines = [("And more:", GOLD), ("CI on every push", WHITE), ("xmake packages", WHITE), ("header generators", WHITE),
-             ("translations", WHITE), (f"{D['org']['public_repos']} public repos", AQUA),
+    lines = [("And more:", GOLD), ("xmake-repo packages", WHITE), ("Crowdin translations", WHITE),
+             ("LSE API typings", WHITE), ("crash logging", WHITE), (f"{D['org']['public_repos']} public repos", AQUA),
              (f"{comma(D['org']['stars'])} stars in total", YELLOW)]
     flat = "  ·  ".join(x for x, _ in lines[1:5])
     stat = f"{D['org']['public_repos']} public repos  ·  {comma(D['org']['stars'])} stars in total"
     out.append(show(tooltip(150, 440, 900, 60) + ptext(600, 450, "And more: " + flat, 2, WHITE, anchor="middle")
                     + ptext(600, 474, stat, 2, YELLOW, anchor="middle"), t0 + 3.0, t1 - 0.4, dy=8))
-    plaque("VIII", "The Redstone Line", "The Railway Bridge at Argenteuil (1873)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1262,7 +1234,6 @@ def scene_people():
                                       f"{D['org']['public_repos']} repos", 2, WHITE, anchor="middle")
                     + ptext(600, 150, "+ translators, testers, plugin authors and server owners", 2, AQUA,
                             anchor="middle"), hb + 2.8, t1 - 0.4, dy=8))
-    plaque("IX", "Gathering of Heads", "Luncheon on the Grass (1866)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1312,13 +1283,12 @@ def scene_numbers():
         name = {"levilamina-mod-template": "mod template", "LegacyScriptEngine": "LSE"}.get(repo, repo)
         tag = nametag(0, -46 - (i % 2) * 44, name, f"★ {comma(R(repo, 'stars'))}", col=YELLOW if i == 0 else WHITE)
         out.append(show(f'<g>{anim_tf("translate", pairs)}{tag}</g>', t0 + 3.2 + i * 0.2, t1 - 0.3))
-    out.append(mc_title("Another dimension", "2.5D → 3D  ·  the numbers, live", t0 + 0.3, t0 + 3.0, y=34, size=5))
+    out.append(mc_title("By the numbers", "LeviMC on GitHub", t0 + 0.3, t0 + 3.0, y=34, size=5))
     totals = [("Stars", comma(D["org"]["stars"])), ("Repos", str(D["org"]["public_repos"])),
               ("Contributors", str(D["org"]["contributors"])), ("Followers", str(D["org"]["followers"])),
               ("LL commits", comma(R("LeviLamina", "commits"))), ("LL releases", str(R("LeviLamina", "releases"))),
               ("Downloads", k_fmt(sum((v.get("downloads") or 0) for v in D["repos"].values())))]
     out.append(scoreboard(966, 120, "LeviMC", totals, t0 + 4.0, t1 - 0.4))
-    plaque("X", "Towers of Stars", "the Rouen Cathedral series (1892–94)", t0 + 0.4, t1)
     return scene("".join(out), t0, t1)
 
 
@@ -1361,9 +1331,9 @@ def scene_finale():
     face_cols = {}
     for (x, y, z), c in logo_cols.items():
         base = mc.hx(c)
-        face_cols[(x, y, z, "top")] = mc.to_hex(mc.monet_light(base, 0.1))
-        face_cols[(x, y, z, "left")] = mc.to_hex(mc.monet_shade(base, 0.92))
-        face_cols[(x, y, z, "right")] = mc.to_hex(mc.monet_shade(base, 0.72))
+        face_cols[(x, y, z, "top")] = mc.to_hex(mc.warm_light(base, 0.1))
+        face_cols[(x, y, z, "left")] = mc.to_hex(mc.tinted_shade(base, 0.92))
+        face_cols[(x, y, z, "right")] = mc.to_hex(mc.tinted_shade(base, 0.72))
     times, cams = [], []
     n = 220
     for i in range(n + 1):
@@ -1385,18 +1355,16 @@ def scene_finale():
         page += (ptext(bx_ + 20, by_ + 58 + i * 28, k, 2, "#7a3aa8", shadow=False)
                  + ptext(bx_ + 150, by_ + 58 + i * 28, v, 2, INK, shadow=False))
     out.append(show(page, ta, tb, dy=12))
-    out.append(chat_block([("<ShrBox> see you on Discord!", WHITE), ("You joined the game", YELLOW),
-                           ("<OEOTYAN> welcome :)", WHITE)], ta + 2.0, step=1.6, life=8.0, t_end=tb))
+    out.append(chat_block([("You joined the game", YELLOW)], ta + 2.0, step=1.6, life=8.0, t_end=tb))
     tc = t0 + 17.0
     out.append(show('<rect width="1200" height="240" fill="url(#hushtop)"/>', tc - 0.5, T))
     out.append(logo_text(600, 30, "LEVIMC", 11, tc, T - 0.2))
     out.append(show(ptext(600, 120, "Open-source tools for the community, by the community.", 2, YELLOW,
                           anchor="middle"), tc + 1.0, T - 0.2, dy=6))
-    out.append(show(ptext(600, 146, f"levimc.org  ·  live data as of {D['as_of']}, refreshed weekly", 2, AQUA,
+    out.append(show(ptext(600, 146, f"levimc.org  ·  data as of {D['as_of']}", 2, AQUA,
                           anchor="middle"), tc + 1.8, T - 0.2, dy=6))
     out.append(show(ptext(600, 172, "Thanks for playing.  Not affiliated with Mojang Studios or Microsoft.", 2,
                           "#f0e8d8", anchor="middle"), tc + 2.6, T - 0.2, dy=6))
-    plaque("XI", "The Floating Garden", "Water Lilies, Setting Sun (1907)", t0 + 0.4, T - 0.8)
     return scene("".join(out), t0, t1, last=True)
 
 
@@ -1426,14 +1394,14 @@ def main():
     WORLD_URI, _props = mc.history_world()
     scenes = [scene_title(), scene_history(), scene_lamina(), scene_script(), scene_stone(), scene_launch(),
               scene_mods(), scene_tools(), scene_people(), scene_numbers(), scene_finale()]
-    overlay = hud(SC["history"][0]) + plaques_svg()
+    overlay = hud(SC["history"][0])
     m, s = divmod(int(T), 60)
     body = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" '
         'shape-rendering="crispEdges" role="img" aria-labelledby="ttl desc">',
-        '<title id="ttl">LeviMC: Monet Edition</title>',
-        f'<desc id="desc">A {m}:{s:02d} animated tour of LeviMC (formerly LiteLDev): a Minecraft world painted in '
-        "Monet's style that grows from 2D to isometric to 3D. It covers the history from LiteLoaderBDS (2021) to "
+        '<title id="ttl">LeviMC</title>',
+        f'<desc id="desc">A {m}:{s:02d} animated tour of LeviMC (formerly LiteLDev) in a Minecraft world. '
+        "It covers the history from LiteLoaderBDS (2021) to "
         'LeviLamina, the LeviLamina mod loader, LegacyScriptEngine, LeviStone, the LeviLaunchroid and LeviLauncher '
         'launchers, mods, tooling, the people, live statistics and how to join.</desc>',
         defs_block(),
@@ -1446,7 +1414,7 @@ def main():
         "</g></svg>",
     ]
     svg = "\n".join(body)
-    out = os.path.join(HERE, "..", "profile", "levimc-monet.svg")
+    out = os.path.join(HERE, "..", "profile", "levimc-profile.svg")
     with open(out, "w", encoding="utf-8") as fh:
         fh.write(svg)
     print(f"wrote {os.path.normpath(out)}  ({len(svg) / 1024:.0f} KiB, {m}:{s:02d})")

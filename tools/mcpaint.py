@@ -1,8 +1,8 @@
-"""Minecraft, painted by Monet: block textures, skies and the 2D side-view world, all in broken colour.
+"""Painterly Minecraft: block textures, skies and the side-view history world.
 
-Every texture is 8x8 texels, laid down as a ground coat plus short dabs from a Monet palette -- warm gold
+Every texture is 8x8 texels, laid down as a ground coat plus short dabs from a soft palette -- warm gold
 in the lights, lilac and blue in the shadows -- so a grass block still reads as a grass block, but up close
-it is a little impressionist canvas. Images are indexed PNGs (stdlib zlib only), shown with
+it looks hand-painted. Images are indexed PNGs (stdlib zlib only), shown with
 image-rendering: pixelated.
 """
 import base64
@@ -38,12 +38,12 @@ LILAC = hx("#6c64a8")
 GOLD = hx("#ffd890")
 
 
-def monet_shade(c, k):
-    """Monet's shadows are coloured: darken toward lilac-blue instead of black."""
+def tinted_shade(c, k):
+    """Coloured shadows: darken toward lilac-blue instead of black."""
     return mix(tuple(v * k for v in c), LILAC, (1 - k) * 0.55)
 
 
-def monet_light(c, k):
+def warm_light(c, k):
     return mix(c, GOLD, k)
 
 
@@ -177,10 +177,10 @@ def texture(kind, seed=0):
             if kind == "path_side":
                 depth = 1
             for y in range(depth):
-                g[y][x] = top[y][x] if kind != "path_side" else monet_light(top[y][x], 0.15)
+                g[y][x] = top[y][x] if kind != "path_side" else warm_light(top[y][x], 0.15)
         return g
     if kind == "path_top":
-        return [[monet_light(c, 0.12) for c in row] for row in _paint("dirt", seed, 16)]
+        return [[warm_light(c, 0.12) for c in row] for row in _paint("dirt", seed, 16)]
     if kind in ("log_side", "birch_side"):
         g = _paint("planks", seed, 0)
         r = random.Random(f"{kind}{seed}")
@@ -293,7 +293,7 @@ def texture(kind, seed=0):
         r = random.Random(kind + str(seed))
         for _ in range(5):
             x, y = r.randrange(TEX), r.randrange(TEX)
-            g[y][x] = monet_shade(g[y][x], 0.7)
+            g[y][x] = tinted_shade(g[y][x], 0.7)
         return g
     if kind in PAL:
         return _paint(kind, seed, 12)
@@ -309,8 +309,8 @@ def tex_uri(kind, seed=0, k=1.0, light=0.0):
             if c is None:
                 px.append(None)
             else:
-                c = monet_shade(c, k) if k < 1 else c
-                px.append(monet_light(c, light) if light else c)
+                c = tinted_shade(c, k) if k < 1 else c
+                px.append(warm_light(c, light) if light else c)
     return png_uri(px, TEX, TEX)
 
 
@@ -359,7 +359,7 @@ def sprite_grid(name):
 # ----------------------------------------------------------------------------------- skies
 
 def sky(w, h, top, mid, low, sun=None, sun_col="#ffd890", clouds=0.55, seed=1, haze="#e8dce8"):
-    """An impressionist sky at texel resolution; returns a function (x, y) -> RGB with dabs baked in."""
+    """A painted sky at texel resolution, returned as a grid of RGB with dabs baked in."""
     n = Noise(seed)
     r = random.Random(seed)
     T, M, L = hx(top), hx(mid), hx(low)
@@ -388,7 +388,7 @@ def sky(w, h, top, mid, low, sun=None, sun_col="#ffd890", clouds=0.55, seed=1, h
     return grid
 
 
-# ------------------------------------------------------------------------- the 2D history world
+# ------------------------------------------------------------------------- the side-view history world
 
 COLS, ROWS, SURF = 180, 15, 10   # 30 columns per year, surface row 10 (top edge at y = 400 px)
 
@@ -414,7 +414,7 @@ def history_world():
             k = 0 if k < 0 else 5 if k > 5 else k
             c = skies[k][y][x % 240]
             far = y - (SURF * TEX - 14 - 9 * n(x / 40, k * 3.1))
-            if far > 0:  # far hills, Monet haze
+            if far > 0:  # far hills in haze
                 hill = [hx("#8aa07a"), hx("#9aaa6a"), hx("#b09a8a"), hx("#b8bcd0"), hx("#c8a8c8"), hx("#5a80c0")][k]
                 c = mix(c, hill, min(0.75, 0.3 + far * 0.06))
                 if k == 5 and far > 3:
@@ -566,7 +566,7 @@ def history_world():
             for x in range(TEX):
                 if g[y][x] is not None:
                     img[r * TEX + y][c * TEX + x] = g[y][x]
-    # water shimmer + soft Monet light on the surface row
+    # water shimmer
     for (c, r), kind in blocks.items():
         if kind == "water":
             for x in range(TEX):
