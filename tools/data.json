@@ -1,0 +1,1998 @@
+{
+ "as_of": "2026-10-05",
+ "org": {
+  "name": "LeviMC",
+  "public_repos": 64,
+  "followers": 428,
+  "stars": 3532,
+  "public_members": 13,
+  "contributors": 98
+ },
+ "repos": {
+  "LeviLamina": {
+   "stars": 1688,
+   "forks": 126,
+   "created": "2021-01-27",
+   "archived": false,
+   "language": "C++",
+   "description": "A lightweight, modular and versatile mod loader for Minecraft Bedrock Edition, formerly known as LiteLoaderBDS",
+   "releases": 133,
+   "downloads": 71065,
+   "latest": "v26.51.6",
+   "latest_date": "2026-09-29",
+   "first_release": "2023-12-01",
+   "commits": 3114,
+   "contributors": 30,
+   "top": [
+    [
+     "OEOTYAN",
+     1286
+    ],
+    [
+     "ShrBox",
+     878
+    ],
+    [
+     "Lovelylavender4",
+     187
+    ],
+    [
+     "RimuruChan",
+     173
+    ],
+    [
+     "futrime",
+     142
+    ],
+    [
+     "Dofes",
+     111
+    ],
+    [
+     "dreamguxiang",
+     72
+    ],
+    [
+     "zimuya4153",
+     46
+    ]
+   ]
+  },
+  "LegacyScriptEngine": {
+   "stars": 115,
+   "forks": 18,
+   "created": "2023-12-29",
+   "archived": false,
+   "language": "C++",
+   "description": "A plugin engine for running LLSE plugins on LeviLamina",
+   "releases": 148,
+   "downloads": 51204,
+   "latest": "v0.22.2",
+   "latest_date": "2026-09-21",
+   "first_release": "2024-02-04",
+   "commits": 1198,
+   "contributors": 20,
+   "top": [
+    [
+     "ShrBox",
+     922
+    ],
+    [
+     "futrime",
+     122
+    ],
+    [
+     "xiaoqch",
+     60
+    ],
+    [
+     "zimuya4153",
+     22
+    ],
+    [
+     "OEOTYAN",
+     12
+    ],
+    [
+     "Dofes",
+     8
+    ],
+    [
+     "twoone-3",
+     6
+    ],
+    [
+     "engsr6982",
+     5
+    ]
+   ]
+  },
+  "LeviLaunchroid": {
+   "stars": 610,
+   "forks": 136,
+   "created": "2025-03-31",
+   "archived": false,
+   "language": "Java",
+   "description": "A launcher designed for Minecraft Bedrock Edition on Android",
+   "releases": 94,
+   "downloads": 756183,
+   "latest": "v1.5.25",
+   "latest_date": "2026-09-30",
+   "first_release": "2025-05-06",
+   "commits": 428,
+   "contributors": 11,
+   "top": [
+    [
+     "RadiantByte",
+     252
+    ],
+    [
+     "dreamguxiang",
+     161
+    ],
+    [
+     "alvinqid",
+     3
+    ],
+    [
+     "faizul726",
+     2
+    ],
+    [
+     "indpriyanshuraj",
+     2
+    ],
+    [
+     "Viablecobra",
+     2
+    ],
+    [
+     "AlexeiCrystal",
+     1
+    ],
+    [
+     "Frago9876543210",
+     1
+    ]
+   ]
+  },
+  "LeviLauncher": {
+   "stars": 415,
+   "forks": 79,
+   "created": "2025-11-13",
+   "archived": false,
+   "language": "TypeScript",
+   "description": "Minecraft Bedrock Edition GDK Launcher for Windows",
+   "releases": 51,
+   "downloads": 212914,
+   "latest": "v0.3.13",
+   "latest_date": "2026-06-26",
+   "first_release": "2025-11-13",
+   "commits": 431,
+   "contributors": 8,
+   "top": [
+    [
+     "dreamguxiang",
+     416
+    ],
+    [
+     "neverforward",
+     7
+    ],
+    [
+     "ShrBox",
+     2
+    ],
+    [
+     "kazaminosuke",
+     2
+    ],
+    [
+     "ERRORES241",
+     1
+    ],
+    [
+     "Lovelylavender4",
+     1
+    ],
+    [
+     "zimuya4153",
+     1
+    ],
+    [
+     "ksqeib",
+     1
+    ]
+   ]
+  },
+  "LeviStone": {
+   "stars": 33,
+   "forks": 3,
+   "created": "2025-01-14",
+   "archived": false,
+   "language": "C++",
+   "description": "A runtime for running Endstone plugins on LeviLamina",
+   "releases": 10,
+   "downloads": 0,
+   "latest": "v0.11.12",
+   "latest_date": "2026-09-24",
+   "first_release": "2026-03-28",
+   "commits": 137,
+   "contributors": 5,
+   "top": [
+    [
+     "ShrBox",
+     93
+    ],
+    [
+     "wu-vincent",
+     8
+    ],
+    [
+     "OEOTYAN",
+     7
+    ],
+    [
+     "KawaiiNahida",
+     4
+    ],
+    [
+     "dreamguxiang",
+     1
+    ]
+   ]
+  },
+  "LeviOptimize": {
+   "stars": 65,
+   "forks": 5,
+   "created": "2023-12-12",
+   "archived": false,
+   "language": "C++",
+   "description": "A performance optimization plugin for Minecraft Bedrock Server",
+   "releases": 37,
+   "downloads": 6455,
+   "latest": "v0.17.0",
+   "latest_date": "2026-09-18",
+   "first_release": "2024-01-20",
+   "commits": 141,
+   "contributors": 6,
+   "top": [
+    [
+     "Dofes",
+     67
+    ],
+    [
+     "ShrBox",
+     42
+    ],
+    [
+     "OEOTYAN",
+     25
+    ],
+    [
+     "futrime",
+     3
+    ],
+    [
+     "yhzx233",
+     2
+    ],
+    [
+     "residua1",
+     1
+    ]
+   ]
+  },
+  "LeviAntiCheat": {
+   "stars": 46,
+   "forks": 1,
+   "created": "2024-02-16",
+   "archived": false,
+   "language": null,
+   "description": "Powerful anti-cheating for LeviLamina(Bedrock Dedicated Server)",
+   "releases": 60,
+   "downloads": 1254,
+   "latest": "v0.17.2",
+   "latest_date": "2026-10-04",
+   "first_release": "2024-04-16",
+   "commits": 106,
+   "contributors": 6,
+   "top": [
+    [
+     "ShrBox",
+     76
+    ],
+    [
+     "futrime",
+     7
+    ],
+    [
+     "residua1",
+     6
+    ],
+    [
+     "KawaiiNahida",
+     5
+    ],
+    [
+     "KobeBryant114514",
+     1
+    ],
+    [
+     "n15421",
+     1
+    ]
+   ]
+  },
+  "MoreDimensions": {
+   "stars": 26,
+   "forks": 4,
+   "created": "2024-02-12",
+   "archived": false,
+   "language": "C++",
+   "description": "Multi dimensions on Bedrock Dedicated Server",
+   "releases": 24,
+   "downloads": 1420,
+   "latest": "v0.14.1",
+   "latest_date": "2026-08-16",
+   "first_release": "2024-03-08",
+   "commits": 128,
+   "contributors": 5,
+   "top": [
+    [
+     "quizhizhe",
+     58
+    ],
+    [
+     "ShrBox",
+     45
+    ],
+    [
+     "futrime",
+     8
+    ],
+    [
+     "Dofes",
+     1
+    ],
+    [
+     "Lovelylavender4",
+     1
+    ]
+   ]
+  },
+  "LeviSchematic": {
+   "stars": 18,
+   "forks": 5,
+   "created": "2026-03-17",
+   "archived": false,
+   "language": "C++",
+   "description": "A Litematica-style building projection tool based on LeviLamina client",
+   "releases": 0,
+   "downloads": 0,
+   "latest": null,
+   "latest_date": null,
+   "first_release": null,
+   "commits": 36,
+   "contributors": 2,
+   "top": [
+    [
+     "quizhizhe",
+     28
+    ],
+    [
+     "ShrBox",
+     3
+    ]
+   ]
+  },
+  "CrashLogger": {
+   "stars": 7,
+   "forks": 0,
+   "created": "2023-04-03",
+   "archived": false,
+   "language": "C++",
+   "description": "Show crash log of LeviLamina",
+   "releases": 11,
+   "downloads": 30060,
+   "latest": "v1.3.3",
+   "latest_date": "2026-01-16",
+   "first_release": "2023-04-03",
+   "commits": 51,
+   "contributors": 4,
+   "top": [
+    [
+     "ShrBox",
+     30
+    ],
+    [
+     "Dofes",
+     8
+    ],
+    [
+     "RimuruChan",
+     7
+    ],
+    [
+     "futrime",
+     6
+    ]
+   ]
+  },
+  "levilamina-mod-template": {
+   "stars": 43,
+   "forks": 16,
+   "created": "2023-11-17",
+   "archived": false,
+   "language": "Xmake",
+   "description": "The LeviLamina mod template",
+   "releases": 0,
+   "downloads": 0,
+   "latest": null,
+   "latest_date": null,
+   "first_release": null,
+   "commits": 141,
+   "contributors": 8,
+   "top": [
+    [
+     "futrime",
+     55
+    ],
+    [
+     "OEOTYAN",
+     29
+    ],
+    [
+     "ShrBox",
+     24
+    ],
+    [
+     "Dofes",
+     8
+    ],
+    [
+     "RimuruChan",
+     3
+    ],
+    [
+     "1143910315",
+     1
+    ],
+    [
+     "PA733",
+     1
+    ],
+    [
+     "killcerr",
+     1
+    ]
+   ]
+  },
+  "docker-levilamina-server": {
+   "stars": 15,
+   "forks": 7,
+   "created": "2023-12-01",
+   "archived": false,
+   "language": "Dockerfile",
+   "description": "A docker image that provides a LeviLamina server that will automatically download selected version at startup ",
+   "releases": 26,
+   "downloads": 0,
+   "latest": "v0.8.7",
+   "latest_date": "2026-04-14",
+   "first_release": "2023-12-01",
+   "commits": 87,
+   "contributors": 5,
+   "top": [
+    [
+     "ShrBox",
+     44
+    ],
+    [
+     "futrime",
+     37
+    ],
+    [
+     "dmblock",
+     4
+    ],
+    [
+     "Gaprix",
+     1
+    ],
+    [
+     "residua1",
+     1
+    ]
+   ]
+  },
+  "LiteLoaderBDS": {
+   "stars": 53,
+   "forks": 3,
+   "created": "2023-07-20",
+   "archived": true,
+   "language": "C++",
+   "description": "A legacy plugin loader for Minecraft Bedrock Dedicated Server",
+   "releases": 99,
+   "downloads": 19810,
+   "latest": "2.16.2",
+   "latest_date": "2023-10-09",
+   "first_release": "2023-07-20",
+   "commits": 3792,
+   "contributors": 33,
+   "top": [
+    [
+     "dreamguxiang",
+     743
+    ],
+    [
+     "yqs112358",
+     671
+    ],
+    [
+     "ShrBox",
+     648
+    ],
+    [
+     "xiaoqch",
+     531
+    ],
+    [
+     "Jaciezyt",
+     258
+    ],
+    [
+     "KawaiiNahida",
+     255
+    ],
+    [
+     "OEOTYAN",
+     115
+    ],
+    [
+     "RimuruChan",
+     106
+    ]
+   ]
+  },
+  "bedrinth": {
+   "stars": 6,
+   "forks": 5,
+   "created": "2023-08-30",
+   "archived": false,
+   "language": "TypeScript",
+   "description": null,
+   "releases": 0,
+   "downloads": 0,
+   "latest": null,
+   "latest_date": null,
+   "first_release": null,
+   "commits": 189,
+   "contributors": 9,
+   "top": [
+    [
+     "futrime",
+     68
+    ],
+    [
+     "harry-xi",
+     33
+    ],
+    [
+     "dreamguxiang",
+     15
+    ],
+    [
+     "ShrBox",
+     15
+    ],
+    [
+     "AlexXuCN",
+     4
+    ],
+    [
+     "Nico6719",
+     2
+    ],
+    [
+     "SunnyCloudYang",
+     1
+    ],
+    [
+     "Dofes",
+     1
+    ]
+   ]
+  },
+  "LegacyMoney": {
+   "stars": 11,
+   "forks": 4,
+   "created": "2023-12-29",
+   "archived": false,
+   "language": "C++",
+   "description": "LLMoney, but adapted to LeviLamina",
+   "releases": 45,
+   "downloads": 18867,
+   "latest": "v0.22.0",
+   "latest_date": "2026-09-18",
+   "first_release": "2023-12-31",
+   "commits": 121,
+   "contributors": 3,
+   "top": [
+    [
+     "ShrBox",
+     115
+    ],
+    [
+     "Lovelylavender4",
+     1
+    ],
+    [
+     "twoone-3",
+     1
+    ]
+   ]
+  },
+  "LegacyRemoteCall": {
+   "stars": 9,
+   "forks": 3,
+   "created": "2024-02-04",
+   "archived": false,
+   "language": "C++",
+   "description": "Remote call module for LegacyScriptEngine",
+   "releases": 38,
+   "downloads": 19154,
+   "latest": "v0.22.0",
+   "latest_date": "2026-09-18",
+   "first_release": "2024-02-04",
+   "commits": 85,
+   "contributors": 4,
+   "top": [
+    [
+     "ShrBox",
+     77
+    ],
+    [
+     "futrime",
+     2
+    ],
+    [
+     "engsr6982",
+     1
+    ],
+    [
+     "killcerr",
+     1
+    ]
+   ]
+  },
+  "legacy-script-engine-api": {
+   "stars": 25,
+   "forks": 3,
+   "created": "2022-08-21",
+   "archived": false,
+   "language": "Python",
+   "description": "Provides plugin API hints for development guidance on various native language platforms supported by the Legacy Script Engine.",
+   "releases": 9,
+   "downloads": 0,
+   "latest": "JavaScript/v2.18.0",
+   "latest_date": "2026-02-21",
+   "first_release": "2023-03-10",
+   "commits": 262,
+   "contributors": 10,
+   "top": [
+    [
+     "lgc2333",
+     84
+    ],
+    [
+     "harry-xi",
+     55
+    ],
+    [
+     "leoweyr",
+     31
+    ],
+    [
+     "HuoHuas001",
+     31
+    ],
+    [
+     "moxisuki",
+     23
+    ],
+    [
+     "xianyubb",
+     10
+    ],
+    [
+     "engsr6982",
+     6
+    ],
+    [
+     "xiaoqch",
+     5
+    ]
+   ]
+  },
+  "bdsdown": {
+   "stars": 3,
+   "forks": 2,
+   "created": "2023-02-06",
+   "archived": false,
+   "language": "Go",
+   "description": "Downloader for Minecraft BDS",
+   "releases": 22,
+   "downloads": 26663,
+   "latest": "v1.2.1",
+   "latest_date": "2026-03-29",
+   "first_release": "2023-02-09",
+   "commits": 61,
+   "contributors": 5,
+   "top": [
+    [
+     "ShrBox",
+     18
+    ],
+    [
+     "futrime",
+     16
+    ],
+    [
+     "KawaiiNahida",
+     3
+    ],
+    [
+     "Krondes303",
+     1
+    ],
+    [
+     "RimuruChan",
+     1
+    ]
+   ]
+  },
+  "PreLoader": {
+   "stars": 7,
+   "forks": 0,
+   "created": "2023-01-25",
+   "archived": false,
+   "language": null,
+   "description": "A library preloader for loading LeviLamina",
+   "releases": 42,
+   "downloads": 59987,
+   "latest": "v1.16.3",
+   "latest_date": "2026-09-18",
+   "first_release": "2023-02-04",
+   "commits": 16,
+   "contributors": 2,
+   "top": [
+    [
+     "ShrBox",
+     12
+    ],
+    [
+     "RimuruChan",
+     4
+    ]
+   ]
+  },
+  "PeEditor": {
+   "stars": 8,
+   "forks": 0,
+   "created": "2022-04-19",
+   "archived": false,
+   "language": "C++",
+   "description": "A tool to inject PreLoader to Minecraft Bedrock Dedicated Server",
+   "releases": 18,
+   "downloads": 40605,
+   "latest": "v3.9.1",
+   "latest_date": "2026-04-14",
+   "first_release": "2023-03-27",
+   "commits": 45,
+   "contributors": 5,
+   "top": [
+    [
+     "RimuruChan",
+     22
+    ],
+    [
+     "ShrBox",
+     10
+    ],
+    [
+     "OEOTYAN",
+     9
+    ],
+    [
+     "futrime",
+     2
+    ],
+    [
+     "KawaiiNahida",
+     1
+    ]
+   ]
+  },
+  "lipr": {
+   "stars": 1,
+   "forks": 0,
+   "created": "2026-02-01",
+   "archived": false,
+   "language": "Python",
+   "description": "The registry for lip",
+   "releases": 0,
+   "downloads": 0,
+   "latest": null,
+   "latest_date": null,
+   "first_release": null,
+   "commits": 749,
+   "contributors": 2,
+   "top": [
+    [
+     "futrime",
+     10
+    ],
+    [
+     "ShrBox",
+     5
+    ]
+   ]
+  },
+  "bedrock-runtime-data": {
+   "stars": 18,
+   "forks": 1,
+   "created": "2024-08-07",
+   "archived": false,
+   "language": null,
+   "description": null,
+   "releases": 162,
+   "downloads": 71064,
+   "latest": "v26.51.1-client.10",
+   "latest_date": "2026-10-05",
+   "first_release": "2024-08-07",
+   "commits": 104,
+   "contributors": 3,
+   "top": [
+    [
+     "ShrBox",
+     98
+    ],
+    [
+     "RimuruChan",
+     5
+    ],
+    [
+     "OEOTYAN",
+     1
+    ]
+   ]
+  }
+ },
+ "created": [
+  [
+   "2021-01-27",
+   "LeviLamina",
+   false
+  ],
+  [
+   "2021-02-08",
+   "LLEssentials",
+   true
+  ],
+  [
+   "2021-07-22",
+   "LiteLoaderSE-Aids",
+   true
+  ],
+  [
+   "2021-10-20",
+   "liteloaderbds-utilities",
+   true
+  ],
+  [
+   "2021-11-14",
+   "liteloaderbds-plugin-template",
+   true
+  ],
+  [
+   "2021-12-19",
+   "liteloaderbds-plugin-sdk",
+   true
+  ],
+  [
+   "2022-02-11",
+   "BDSLM",
+   true
+  ],
+  [
+   "2022-04-02",
+   "liteloaderbds-websocket",
+   true
+  ],
+  [
+   "2022-04-19",
+   "PeEditor",
+   false
+  ],
+  [
+   "2022-04-22",
+   "LiteLoader.NET",
+   true
+  ],
+  [
+   "2022-05-02",
+   ".github",
+   false
+  ],
+  [
+   "2022-06-01",
+   "HeaderOutput",
+   true
+  ],
+  [
+   "2022-06-14",
+   "PermissionAPI",
+   true
+  ],
+  [
+   "2022-07-23",
+   "NodeJsBuilds",
+   true
+  ],
+  [
+   "2022-08-21",
+   "legacy-script-engine-api",
+   false
+  ],
+  [
+   "2022-08-29",
+   "ParticleAPI",
+   true
+  ],
+  [
+   "2022-09-01",
+   "liteloaderbds-documentation",
+   true
+  ],
+  [
+   "2023-01-25",
+   "Demangler",
+   false
+  ],
+  [
+   "2023-01-25",
+   "PreLoader",
+   false
+  ],
+  [
+   "2023-01-26",
+   "SymbolProvider",
+   false
+  ],
+  [
+   "2023-01-27",
+   "LLPermission",
+   true
+  ],
+  [
+   "2023-02-04",
+   "LLMoney",
+   true
+  ],
+  [
+   "2023-02-06",
+   "bdsdown",
+   false
+  ],
+  [
+   "2023-02-07",
+   "RegistryGenerator",
+   true
+  ],
+  [
+   "2023-03-12",
+   "Detours",
+   false
+  ],
+  [
+   "2023-03-12",
+   "xmake-repo",
+   false
+  ],
+  [
+   "2023-03-19",
+   "BDSLibrary",
+   true
+  ],
+  [
+   "2023-03-20",
+   "llpy-helper-lib",
+   true
+  ],
+  [
+   "2023-03-27",
+   "pe_bliss",
+   false
+  ],
+  [
+   "2023-04-03",
+   "CrashLogger",
+   false
+  ],
+  [
+   "2023-07-20",
+   "LiteLoaderBDS",
+   true
+  ],
+  [
+   "2023-08-30",
+   "bedrinth",
+   false
+  ],
+  [
+   "2023-08-31",
+   "BDSOriginalData",
+   true
+  ],
+  [
+   "2023-09-02",
+   "bedrinth-api",
+   true
+  ],
+  [
+   "2023-11-17",
+   "levilamina-mod-template",
+   false
+  ],
+  [
+   "2023-12-01",
+   "docker-levilamina-server",
+   false
+  ],
+  [
+   "2023-12-12",
+   "LeviOptimize",
+   false
+  ],
+  [
+   "2023-12-29",
+   "LegacyMoney",
+   false
+  ],
+  [
+   "2023-12-29",
+   "LegacyScriptEngine",
+   false
+  ],
+  [
+   "2024-01-12",
+   "bds",
+   false
+  ],
+  [
+   "2024-01-18",
+   "LegacyParticleAPI",
+   true
+  ],
+  [
+   "2024-01-24",
+   "levilamina-loc",
+   false
+  ],
+  [
+   "2024-02-04",
+   "LegacyRemoteCall",
+   false
+  ],
+  [
+   "2024-02-12",
+   "MoreDimensions",
+   false
+  ],
+  [
+   "2024-02-16",
+   "LeviAntiCheat",
+   false
+  ],
+  [
+   "2024-03-07",
+   "LegacyAddonsManager",
+   true
+  ],
+  [
+   "2024-04-09",
+   "LeviPenalizeCheat",
+   false
+  ],
+  [
+   "2024-08-07",
+   "LeviBuildScript",
+   false
+  ],
+  [
+   "2024-08-07",
+   "bedrock-runtime-data",
+   false
+  ],
+  [
+   "2024-08-07",
+   "prelink-release",
+   false
+  ],
+  [
+   "2025-01-09",
+   "iListenAttentively",
+   false
+  ],
+  [
+   "2025-01-14",
+   "LeviStone",
+   false
+  ],
+  [
+   "2025-03-31",
+   "LeviLaunchroid",
+   false
+  ],
+  [
+   "2025-04-18",
+   "mcapi-requests",
+   false
+  ],
+  [
+   "2025-05-03",
+   "preloader-android",
+   false
+  ],
+  [
+   "2025-11-02",
+   "minecraft-windows-gdk-version-db",
+   false
+  ],
+  [
+   "2025-11-13",
+   "LeviLauncher",
+   false
+  ],
+  [
+   "2025-11-18",
+   "LLAntiCheat",
+   true
+  ],
+  [
+   "2026-01-17",
+   "levilamina-client-version-db",
+   false
+  ],
+  [
+   "2026-01-20",
+   "levimc.org",
+   false
+  ],
+  [
+   "2026-02-01",
+   "lipr",
+   false
+  ],
+  [
+   "2026-03-08",
+   "7-zip-tooth",
+   false
+  ],
+  [
+   "2026-03-17",
+   "LeviSchematic",
+   false
+  ],
+  [
+   "2026-03-27",
+   "docker-levistone-server",
+   false
+  ]
+ ],
+ "yearly_commits": {
+  "LiteLoaderBDS": {
+   "2021": 1290,
+   "2022": 2075,
+   "2023": 424,
+   "2024": 3
+  },
+  "LeviLamina": {
+   "2023": 657,
+   "2024": 1135,
+   "2025": 642,
+   "2026": 680
+  }
+ },
+ "joined": {
+  "ShrBox": [
+   "2021-01-27",
+   "LiteLoaderBDS"
+  ],
+  "dreamguxiang": [
+   "2021-02-05",
+   "LiteLoaderBDS"
+  ],
+  "OEOTYAN": [
+   "2022-05-26",
+   "LiteLoaderBDS"
+  ],
+  "futrime": [
+   "2022-08-27",
+   "LiteLoaderBDS"
+  ],
+  "yqs112358": [
+   "2021-03-27",
+   "LiteLoaderBDS"
+  ],
+  "xiaoqch": [
+   "2021-10-28",
+   "LiteLoaderBDS"
+  ],
+  "RimuruChan": [
+   "2021-05-05",
+   "LiteLoaderBDS"
+  ],
+  "Pd233": [
+   "2022-06-28",
+   "LiteLoaderBDS"
+  ],
+  "Jaciezyt": [
+   "2021-10-22",
+   "LiteLoaderBDS"
+  ],
+  "KawaiiNahida": [
+   "2021-06-26",
+   "LiteLoaderBDS"
+  ],
+  "RadiantByte": [
+   "2025-05-02",
+   "LeviLaunchroid"
+  ],
+  "Lovelylavender4": [
+   "2026-08-13",
+   "LeviLamina"
+  ],
+  "Dofes": [
+   "2023-08-03",
+   "LiteLoaderBDS"
+  ],
+  "moxisuki": [
+   "2022-08-26",
+   "legacy-script-engine-api"
+  ],
+  "zimuya4153": [
+   "2024-08-05",
+   "LeviLamina"
+  ],
+  "lgc2333": [
+   "2022-08-23",
+   "legacy-script-engine-api"
+  ],
+  "Redbeanw44602": [
+   "2021-08-13",
+   "LiteLoaderBDS"
+  ],
+  "quizhizhe": [
+   "2022-09-08",
+   "LiteLoaderBDS"
+  ],
+  "harry-xi": [
+   "2022-08-24",
+   "legacy-script-engine-api"
+  ],
+  "PA733": [
+   "2022-12-17",
+   "LiteLoaderBDS"
+  ],
+  "S3v3Nice": [
+   "2022-07-17",
+   "LiteLoaderBDS"
+  ],
+  "killcerr": [
+   "2022-12-18",
+   "LiteLoaderBDS"
+  ],
+  "HuoHuas001": [
+   "2022-08-21",
+   "legacy-script-engine-api"
+  ],
+  "leoweyr": [
+   "2025-03-15",
+   "legacy-script-engine-api"
+  ],
+  "KobeBryant114514": [
+   "2024-10-09",
+   "LeviLamina"
+  ],
+  "wzyyyyyyy": [
+   "2021-02-20",
+   "LiteLoaderBDS"
+  ],
+  "LazuliKao": [
+   "2021-02-27",
+   "LiteLoaderBDS"
+  ]
+ },
+ "heads": {
+  "ShrBox": [
+   "fffffdf4f4eed5b992c5965cccb8eccac7ece1dfe9feffff",
+   "fffffdeaebe7baaa82c6b5d5c8c7ebc1c4f2d2d3eff2f7f6",
+   "fefffcdce3f4c0c5e8c9cde1cfc5d1cab0c2c8c7e6f2ecf3",
+   "f1ecf3dcc6ebd8d2e9c8b7ecdcbdd9e4bbc1d5bee2f1ecf1",
+   "f4e4f3e7c2f0e4dcedc6abe3a67db3ead5c4dcd2dce5d5eb",
+   "e2b0f0e4dced7a6db7614fb0ac8092b16a949b6bc2d3a4e4",
+   "e9d7ef8f7cc96b50ae5d44ad5c46a58645a98544b7ddb7de",
+   "dbd8d96a5cb7c1a4d05f48a867419d885aad7931acd7b6df"
+  ],
+  "dreamguxiang": [
+   "e8e8e8e8e8e8e6e6e3dddddac3c2bdc9c8c3e1e1e1e8e8e7",
+   "e8e8e8e8e8e8e2e4e0b7aea4b0afa4babaafc0c1b6e6e6e6",
+   "e8e8e7dfdfdfc2c2baaea49fb7b5aeb0a9a4b9b0a5d7d7d4",
+   "e8e8e8c8cabebdbfb0aea59ab4b7aeb6b4adafa69ccdcdca",
+   "dbdcd6c4c6b9bdbdb2aaa49bb8bab5bbb9b2aba99fcbcac5",
+   "cbccc6c3c5b9b5b3a8777881766d77b1a4a189868cc4c1c1",
+   "c2c0bbc1c4b8bbbdb0b3b4af50576e555d6f757179b8b6af",
+   "ded6d9cccac5c1c2bcc5c6ba979c9c92979cb6bab0bfc4b5"
+  ],
+  "OEOTYAN": [
+   "2e2f3135363b3234363133343234372e30312627291f2123",
+   "33343a3e3f415d5c534f4f474c4b434c4d442627281b1c1d",
+   "3132375c5b522e2e3328292e26262a2a2a2e4647421d1e1e",
+   "30313457575229282e26272b2a2b302f31354d4d49242526",
+   "3031345b5a5526272a2526292c2c322b2e3353544e323438",
+   "282b2e59594f25262823252828282c2e2e31595a52383a3f",
+   "23252828292a4e4d4346443c4f4d4356564d32333536373c",
+   "21232520222421212323252629282b2a2a2d2b2d2f303135"
+  ],
+  "futrime": [
+   "00000007070760394a974266a7969c603a49070707000000",
+   "080808bdb7b8c8809dd0638ad37a94c32b64aa7b8d080808",
+   "676666e7d0d6f0d4daf8d6d8f5c4c8f3cdcee1c0c5625b5d",
+   "917176dcbfcae9babff5cacbf4babedda0a2eaaab1a88b8e",
+   "a77e83d19dabecb6bbecc2c3e6b7b9ada7a0e9959db29193",
+   "6b645ed1b7a7dfbbbccfa39ffbefe9eccbc7aba3af616a6b",
+   "0b0b0bb89e9deececed7c8cbddacacc4a1a78d98a00b0b0b",
+   "0000000c0c0c767677898e939e9ba26663660c0c0c000000"
+  ],
+  "yqs112358": [
+   "fffffffffffffcfcfcf8f8f8fdfdfdffffffffffffffffff",
+   "fffffffefefee4e2e8e2e1e6e2e2e2f4f4f4ffffffffffff",
+   "fffffff7f7f7e2e0e7dad8dfdcd9dfecebebffffffffffff",
+   "fffffff1f1f1d6d4dbdddbe1dddae0f4f3f4ffffffffffff",
+   "ffffffffffffd6d3dbb9bbc7a4a4b1acadb7ffffffffffff",
+   "fffffffbfcfc9497af767495676a897e829ff1f1f3ffffff",
+   "fefffcbcbfcd535b88968cab88849e65698c74758afffffd",
+   "fefffd95989f292c3d665e73988fac6e6e91282b32f7f7f9"
+  ],
+  "xiaoqch": [
+   "f8f9f38b88989996a5dadad9ecececf6f7f1f4f5eff5f6f0",
+   "e8e8e8908e9a716d86878395e2e1e7b6b4bf94929c6d6b76",
+   "d0d9d4b7b9bca5a2b0f4f2f6a09ba76360784b4a5870747c",
+   "c6cfca9a9aa7c0bec77d798d615e705c7b9592aabad3ded8",
+   "5e5a6e5e53705954684e4f5ea19e9ea9abaab8cccbcbdad4",
+   "525060676b744c638383868aead4cbd8d3c5bfcfc4bbd0c9",
+   "9fb8b095b2ad37689a608aae8d9eac9ab2aea7c1b9a9c3bb",
+   "98b0ab729cc0498ad8475663545d696e7c819fb9b1a2bcb4"
+  ],
+  "RimuruChan": [
+   "bd986ae1a86db27f42d49240da9f50ab9a78b1cbc8b9e3ec",
+   "d3b88effdea3e6b97dd5903edc953dc5c2a39eb8b9b6d7d9",
+   "c6ad88cba17ddaac82e5b165f6c171dec180cad1adcacea7",
+   "4c4a42373c3a4b4236c98f5de5ae64e9be77bdcbbea8c7c4",
+   "6896a36d88893d423d845d38ca974febb064c6b97fb2bd9d",
+   "72bad7a1b39195b6a96ca7ba7eb5c0a2b5a8b0b58f9fb28d",
+   "60adc8a9a96f8baa9279adae83aca56aaeb574adab6aaebb",
+   "7ba191aea25788a17f8fa278aaa35a8ca37e7da28d59a2b4"
+  ],
+  "Pd233": [
+   "bddcd4d7ece2ebf9f1edf6f0d4e4e0b7d0d3c0d9dcd5e5e1",
+   "c9e3dde8f9f0f0fff6e8f2ed9db0b5769caf93bac8d3e8e7",
+   "cde7e2ebfaf2effef6e6efefa6b4b5b6bbbc85aeb7ddefed",
+   "d2ece7e6f5edf0f9f3e3f2f092bbc5bdc9ceb2bfbec5e3de",
+   "bdddd8ceebddddf4e6d9e4e09aaebdb1cacd899bac94c1c3",
+   "94bdbf9bc0baccddd1d8cac494a6afaac2cb7586a1739cb5",
+   "759daeaab9c9e5d4c8e6d0c4e2d4c8949ca6647997628299",
+   "678b9bbcbfbccdc3bee2d5d1bbb0b6adb1bc758aa482a6a2"
+  ],
+  "Jaciezyt": [
+   "f3fefdeaf3f5f1fdfdf1fcfdedfbfcf4fcfdf5fdfff5fdff",
+   "f5f7efe7e9e6b3cadf7b99c47596c0aabfd6f8fbfcf9fcfc",
+   "f3e4c3c2c2cd7798d26a8aba6480b5536da7babfd3fefafb",
+   "f9f15a8fa3ab637eaf6176aa5e75a63c50927a8bb1fffdfc",
+   "e1e133899cab7c7588a6a4b48375815a628d8b92b7fffdfd",
+   "d2d43cdad8dbb4aaaffdebc9f9dbc585839ea2a8d0ebebec",
+   "d4d2438289b47f8baf978e9fe2d4da6e7ea89a9cd4a3aec1",
+   "dbdc3d6c739c636ba28189b2bebacf90918ed0ca75b9bd46"
+  ],
+  "KawaiiNahida": [
+   "b29f89dccf99e5cd89e1be81e2a774e8bc8ccab5a2b1ae81",
+   "b79b73dea680f1d0c3e3b497e09e86ea7264efb797aa9ea1",
+   "feb97af58a76edcaaafbe7e1f8e1dde3b69acea268ddc3b7",
+   "eba069f2cdb8e7c1bce7b9aff2c8c2c29289bea08dd9ad7b",
+   "f3cea2f3e1ddd0ada1efd5b8f7deceefc5abe0bdc3bda4a2",
+   "dad3c6f2e1d8ecc8c3fee3d6fdd2c5e1c1b99a898db59fa7",
+   "8a7e81b9a4a0dfbbb2d4a899da9d7db89188a9909074788d",
+   "5b5462717276dfc1b0bab8a1c9a96ee1c1b2efbda4d6b1a8"
+  ],
+  "RadiantByte": [
+   "c2ae9bc0ac99c1ae9ea69787655a524439317a6a60aa9c8d",
+   "d4bea6d2bba4dcc4b1d8c4afd8c0addac2afdbc2b2d8c0aa",
+   "c5a994c7aa96a98878c7ad94d9c7afe2d5bbdbccb3ceb9a2",
+   "b2917ebfa992b8a28d988776b8ac93a8967fc9b9a0ded4b9",
+   "d0bfabcbbaa69c87722a1c19745d542d1f12a18976cbb8a2",
+   "aa9482af9a87b9a48f917c678465539b8470aa9278ae9178",
+   "a99381aa9482b09b87b7a28ea88b7aa18574b79c83bea38a",
+   "a89280ab9583ab9682b6a18db8a38fb8a38fb49f8ab09a86"
+  ],
+  "Lovelylavender4": [
+   "fdfefefbfcfbdfe1e1bfcedac3cfd9d9dddff9f7f5fffefc",
+   "fdfefdccd7df7eb3dc7dadd27fb5e685b2dac4d6e3faf9f7",
+   "fffdfea8c6e094adc2e1c6b8d7c4b6b4b7bb89b2d4fafcfb",
+   "fdfdfeb3c9dcb4b5bfeac7afe5bfabcbbfbe96b7d0fcfffd",
+   "f8fcf991b7d37ea1bfd8aea7dca9a18ea1b481abd0f5faf5",
+   "c2d6e78cb2d3639bcaabb3bec2bec05389bb7faed3c7d7e3",
+   "b9d3e06097c587adcac4c9c9cfcfd286a8c9679bcab4cedc",
+   "b2c8d6afc7dab9c7d5a7bccba3bac8b7c5d097bdd887b0c8"
+  ],
+  "Dofes": [
+   "f3f1f3e5e3e879949c62828d8ca0adece4e7efecf0ebe8ec",
+   "f6f3f4d8e1e33b6e7823506110445f8a8f9ceae6eae0dde1",
+   "dcd5d5b1bebc496770937a7b8077786b6e7aa0989dc8c0c5",
+   "d7cfcfa3b1b03a6071dcb1a2a199906f696f8a8287b1a9ae",
+   "dfdadc9ca4ab2d393e7152505d7969606b73858489b4adb5",
+   "d2cdd0656f762a38455b4a4db28978444a4f7f8388bfb3bd",
+   "aeb6be4e626b1d272e74615d3f2e33202830716c74a49c9f",
+   "c2bec15f6468967b756452532b24326d57554d4a4a8f868f"
+  ],
+  "moxisuki": [
+   "8f73508e704b6e54375744305a46328b745998836e9e8e81",
+   "8c6d486345215d4221422d1646311b664c2f6e5436b8a796",
+   "a4845c6c4e294f36153f280d422b12654b2e947958c9bdb1",
+   "6349297e5e376f522f513717573d1d7f63418f724eb9ab9e",
+   "6147288c683d64472662421d6d4f297c5d39957751bdb1a8",
+   "3f2c19765c3da18159967650a4845ca98f7073614baea396",
+   "5940204c3929392c203328203e30245747367c6b57978979",
+   "553c1f957851a180564e3a27aa8d68b69a78695743a39484"
+  ],
+  "zimuya4153": [
+   "fffffffffffffffffffffffffffffffffffffffffffefefe",
+   "ffffffffffffffffffffffffffffffffffffffffffffffff",
+   "fffffffdfdfdfaf8faf7f4f6f8fafafbfdfdffffffffffff",
+   "fffffffcfcfcf4f1f3f0edeff3f0f1efecedfbfafaffffff",
+   "fdfffff1eef0e9e6e4efe6e6f3e6e3e1d7ddf7f7f4fffffc",
+   "fbf9faf2eaeee0d3d5eeded7e1d0cedad6dadbdbdefbfbfc",
+   "fafafaf6f6f6f2f2f2f4f4f3f0ecedece8ead3d1d9f4f3f5",
+   "fffffffffffffffffffffffffefffffefffffefefbfdfcfd"
+  ],
+  "lgc2333": [
+   "000000000000000000010000010000070303000000000000",
+   "000000060302552a245a342b5d382f763d3857322b030101",
+   "0000002d181588564e906b61905f55794a497a47421f1311",
+   "0000003e2826865e58b4837ec7a19e8f605b643d3e1a0d0c",
+   "0b07075f4442734c46e5c8bceeccc14e2b2a6c4848130c0c",
+   "a18a82856c696e5b5f806e72c1a4a8766871664d5270504e",
+   "695953ceb7b3a1989db1b9d1acadbcd7d4dfb5aebb6d4743",
+   "52332cdecdcfd1d8e9b2acb6e4eff9d3d1debeb4c04c3736"
+  ],
+  "Redbeanw44602": [
+   "13141e1818252120363534553f3d6946437a443f68433f64",
+   "1516201b1b2b2b2a4546466b4b4a7549477f49467e484682",
+   "1617221d1d2f4444675451755552764d4c794c48844c4b88",
+   "1617221b1c29464566594f705950714a44714b477f4b4a87",
+   "15162320202c4b406154476953466a4039693d3664423c72",
+   "14121e2d2c47503e63534a6f4d476f3f37883c3590393673",
+   "13121e3a3250553b5e5247765c507c51477d3c3489393670",
+   "11101a221e31513859574c795b4f7c4b517e3c3d583d374d"
+  ],
+  "quizhizhe": [
+   "ffffffffffffffffffffffffffffffffffffffffffffffff",
+   "ffffffd0ccc5f4f2f0ffffffffffffffffffffffffffffff",
+   "ffffffbeb7aa7b653ef3f1eefffffffbfcfcf3f6f5ffffff",
+   "ffffffffffffb8b0a17d6842f0eeeb9cbcb66bb2a5ffffff",
+   "ffffffffffffffffffb3ac9d806a4475978e519e91ffffff",
+   "ffffffffffffffffffc0c9c87683722a95709abbb2ffffff",
+   "ffffffffffffd3dad8137d6a137866829586e7e2d9ffffff",
+   "ffffffffffffffffffffffffffffffffffffffffffffffff"
+  ],
+  "harry-xi": [
+   "3f2d14422e15412e143e2b14412e14422e13422f13402c12",
+   "3626123a29133e2b14402d15412e15412d14412d13412d13",
+   "392a1758482e392b142e26132e27142824132e2913363020",
+   "4a381f7560394b3c183e3d10282b112626123c3b142f2d15",
+   "4532184e3a1d5b492e6e6348514c3431320f434411353411",
+   "47321752391b7b6845b2a7819183606d4a2263421f473722",
+   "706145837150897754bcb592a0906c896f4a51381a605e4e",
+   "d6d2aed7d3b0bab4926f654ca69c7ad5cba2c7bb9339372c"
+  ],
+  "residua1": [
+   "d2dee3f5f9f8dee3e6dfe4e7dde7e8d9e3e4f9fcfde7e9eb",
+   "dce3e6e6edefe8eff2e2e8ebeaf0f2e3e9ecd9e1e5d9e0e5",
+   "e5eaedeff4f4cad6dbe2e9ebfcfdfbdce5e9e9eff0eef3f5",
+   "e3eef0d5dfe4edf1f0dde5e8e3edf1dfe8eccddbe1e9eeef",
+   "dfe5e9e7edf1e0e7ead9e5ecc9d4dfe8eaeee4ecefe3eaec",
+   "e6eceee4e9ecd8e0e4eceff0dce3e6dce4e6e2eaecdee5e7",
+   "eef3f3e3edeed8e2e7e5eaeed4dde3e9eff2d8e4e7e6edee",
+   "f4f9fbd1dae0dfe9edbdcbd8dee7ede5eaedeff2f4e1e9ed"
+  ],
+  "PA733": [
+   "fdfefff9fdf8f3efe3e9d1d5ebd2cff5e9ecfcfffffdffff",
+   "fdfefeedd2ddde7291de7090e0688dd9819cf1e1e8fcffff",
+   "fefeffd5809ed6648bd85f88d86089e081a3d485a2fcfeff",
+   "f9f5f8c04d74c64f77cc8895c35076c94773c0597df4eff4",
+   "eeeaeabf5f7cc04b71e6bca8f0dbcfc67685cf88a0efe9ed",
+   "fdfdf2c594979a4158bc8d89d1b69bad7381dbc0cafcfdff",
+   "fdf9e8faf6e6c9c0c6996775766a61cbcac8ffffffffffff",
+   "fffefafbfcefa48694b6a9acded8dcaca7acffffffffffff"
+  ],
+  "S3v3Nice": [
+   "00001a00001a00001a00001b00001b00001b00001a00001b",
+   "00001a00001a00001c00001c00001c00001c00001c00001b",
+   "00001a0d092a6929a3931fb39f28a78c1e8d0b042500001b",
+   "00001a00001b01011c2010496736ee1a0d5400001a00001b",
+   "00001a00001a00001b192e52124ea500001b00001a00001b",
+   "00001a00001a00001a2a5a7f05245200001b00001a00001b",
+   "00001a00001b00001b18426700011c00001a00001a00001b",
+   "00001a00001a00001a01031e00001b00001a00001a00001a"
+  ],
+  "killcerr": [
+   "f0f0f0f0f0f0b2ecdcb2ecdcb2ecdcb2ecdceff0f0f0f0f0",
+   "f0f0f0f0f0f038e3b538e3b538e3b538e3b5edf0eff0f0f0",
+   "b2ecdc38e3b5eaf0eeedf0efedf0efedf0ef38e3b5b0ecdc",
+   "b2ecdc38e3b5edf0ef9dead59cead5f0f0f038e3b5b0ecdc",
+   "b2ecdc38e3b5b0ecdb60e6c25fe6c2b2ecdc38e3b5b0ecdc",
+   "b2ecdc38e3b538e3b538e3b538e3b538e3b538e3b5b0ecdc",
+   "eff0f0edf0efedf0ef73e7c872e7c8edf0efedf0efeff0f0",
+   "f0f0f0f0f0f0f0f0f0c5ede2c5ede2f0f0f0f0f0f0f0f0f0"
+  ],
+  "HuoHuas001": [
+   "f6faf3f5f9f2f1f5eee5e8e8f0efebf5f9f2f5f8f2f5f8f2",
+   "f4f9f2d5e2e2a8becadfe2e5f5eeeceeece7f5f8f2f5f8f2",
+   "edf3f1abc3cf97adbaf9f4f1faefecf7edebedf0eeebf3f0",
+   "f1f9f2d0d4d8e8e6e7faf1e6faefecfaefece9e7e3f4f8f2",
+   "d0dcdfddcfd6ded2cdded3c7dbcec6ddcfcdded9dda2bbd1",
+   "e6e3e7bbb2bdd9d1d4cdc6cec6c0cbd8d2d7cdc4cce3e8ea",
+   "e4e1e6a7b0cabbc7d97680a4566996bfc7cea9b1caacbacb",
+   "e7eaeecdd2e29fabbfa09b9db7bab5bdbfcec4cedc7d9ebe"
+  ],
+  "leoweyr": [
+   "7b575252373c71584c5d413b6a4b3c84695ca2918f978682",
+   "6f565a8b735e684b3d735745775a45886b53d3c3bb95827e",
+   "a59191654b4c6346426f513cb39971bba077e7d5b0a4908b",
+   "c5b3b6b09582b095747f5841b3986ebea47aead79dbdae9b",
+   "b9aab4d3c2c8a98f837657599a7c65cbb17ce9ce7cbf9b6b",
+   "b5a7b3d3c6dbb79d8eb38e4ad19f40e8a447ea983e966c46",
+   "bcadbfe0ad63e9994be5943edf9c32d79e47cba260705547",
+   "b5aacad2b5a3cba0729f7954a08163a88e6bb29a75755d56"
+  ],
+  "KobeBryant114514": [
+   "3a9acb3a9acb3999c935667c374d52328db8338ec22b8bbc",
+   "3a9ed4399dd33c96bf43291165341330637e3196c63090c1",
+   "37a1d23ba0d3408fb05733196a3212395f6a3297ca3291c6",
+   "3da1d43fa0d443a1ce473e2d5231173b87a53695cb2f93c6",
+   "419ed16a867fce972f783b10612d07916327758d7b348fc2",
+   "536562ad5d1ffeac06cc811b964b1beb940de18a084d5350",
+   "59442fb06c20ffb004ffaf0be39214ffab04e99506592f16",
+   "4b3213a16514f5aa1ac18b3cca9034cb9739d891194b2816"
+  ],
+  "LukasPAH": [
+   "7454bd6f52da664ef45c49ff5747ff5545ff5041f94a3cea",
+   "9266b48e66d17658d0664fd45e4ce45546eb5747ff5041f9",
+   "b079a5a775ba795a9a7659b56b52c65947bf5c4af85545ff",
+   "cb8990b27b969a6d9b8c65a68360b8634ca46951dc614cfe",
+   "e29678c3847e926774a373999369a28662ae815fcd7759eb",
+   "f09d61e99b70a67267af797ea070888a638a9f70c38b64cd",
+   "e79759f8a261e79965d18d70b17972bb8092b47ca9996aac",
+   "d78c52e79759f39f5ef6a164ea9a70d68e7dbd7f86a26e8b"
+  ],
+  "wzyyyyyyy": [
+   "f9f8f9e7e3e2f9f6f7fdfffefdfffffdffffffffffffffff",
+   "f2f1eed6d3cce9e2dff6f4effbf9fafbf8fafefefefafafa",
+   "f7f6f6e2e1dccfcdc6e4dcd7e7ddd8ece2ddf4ede7f4f1ef",
+   "fbf9f9fefef9f4f3ece4dcd7eae0dbdfd5d0e9e1dbf6f4f2",
+   "fcfcfbfbfcf1f5f3e4dcd9cef3f1eef6f4f1eee7e4f4f1f2",
+   "fdfdfcf2f3e8eae7d9e0dbdbdad2cde0d8d2ddd5d2f5f2f3",
+   "fffffff6f6f6f2eaeaf1e9e9ede4e7f4eceefbfafaffffff",
+   "ffffffefefeffdfaf8f7e9ebe9dcdcf5e9e8fbfbfbffffff"
+  ],
+  "LazuliKao": [
+   "00eaff02e0ff0cc0ff14a6ff15a4ff15a4ff15a4ff15a4ff",
+   "00eaff00eaff00eaff02e3ff0ac5ff13a8ff15a4ff15a4ff",
+   "00e2ff29e8fd25e8fc1fe9fd21eafea4edf931c9fc12acff",
+   "00dbfedbeef1d5eaeda4d3dbaadde4dbf2f5d6f2f600d5f6",
+   "00dbfedbf0f3d7edf0a3d8dfa7e0e9d2f1f6d0f2f700c9ec",
+   "05bbe89ed9e5abd7e14fb9cf5acbdf5fd8ec5edff400d4f7",
+   "08a6d90899c80680a80789b40893c0089ccc07a9d906b4e3",
+   "09a4d909a1da0a92ca0a8cc50a91d00c94d80d94db0e91dc"
+  ],
+  "cryx233": [
+   "8e6f4f6e543c513d31583f30604839b4905ed29d63745f41",
+   "f3b665dda45cc19053e6b469dda658fab161e29f4f715837",
+   "c78c4ec98741fdb65efdad5cf7a453f1a155c48342483320",
+   "986035f3a359f29f58e99b58eeaa6bd7965b996339523721",
+   "9e623aed9855c67d48cc8e66d3b5a1a97e648a563453361f",
+   "935733ca7d46b36f3ea55f3e98634887583c7e502b694929",
+   "ae7443b7743c8e512d9158398e5f487d4f326e4526614024",
+   "663b228451318c53348d593d7e543f70472e603e27533d27"
+  ],
+  "wu-vincent": [
+   "b7802d15121843251c964a15bb914932251c2e1d101b130c",
+   "51220b1d191da35918f3c939f5b03958482e432e1e281b11",
+   "3b413c393d3bb279369f5a249d6b2e776749583925452a0e",
+   "e7cf8ad3ae898460377a4835744736886231a3661b8c5b18",
+   "e7b87d5f4c3c68553bd68856ce905f49473958492f5c4524",
+   "82673c14141a333537c07f56bf874b867c4dd1aa35c29b1e",
+   "ab3c31282528918e93d6b39dbd895590978879735b755a38",
+   "a3a29f2e37433139474147531c1e23848a867c847ba36356"
+  ],
+  "xianyubb": [
+   "e7e5e6e9e7e8dddfe1ccced6e0e1e5e6e7ebecebe8edece9",
+   "eae7e9d9dee6e2e0dfe2e9e9f5eeecf7f0eeefeeebecebe8",
+   "dcdde4dedbdadcd5d1f4eae2ecdad4f2ebe2f9f1ebf5eceb",
+   "d5dce5f4ede8efe0daf1ddd3f3ddcfcbb3aff0ded7f7efea",
+   "e2e0e2ecddd5f1dcd2f4dfd5f4e1cdf7decdeed6d0e8dad5",
+   "eee9e2eddad2f1dccedac6b6fce3d1f4ccbff4e3d0ead7d5",
+   "e8e0dde7d6d2eed1cbe7cbbaf6d8c2fcddcdf1d3cdedc6ce",
+   "a9b7cbdaccd1ebc7c8c6a399f6d0cbf3c1c6e4c3cde4beca"
+  ],
+  "engsr6982": [
+   "f4f9fdf4f8fcc6c0c4c2c1c3e3e7ecc9cdd3c4c8cbf3f8fb",
+   "feffffcdcdcdccc1c3dbd5d5bfbfc2b3b3b6cacacbd4d4d5",
+   "b7b7b7c3c3c3cbcbcbc4c4c4d0d0d2ceced0cdcdcddfdfdf",
+   "bebebec3c2c2b9b4b5cbc6c8c5c5c7c5c5c7bebebeb6b6b6",
+   "bfbbbe8a8c8c8e9091d1c9c9c4c2c1d2c6c2a5a29e616669",
+   "c8c1c47fc8ceccdbdafeeee5f5e8e06b82877f7f80b2b2b1",
+   "d8b5b3e7e1daf9e9e0f8e8dfefebe86ec9d2b9c9cdcec7cc",
+   "bab2b9f4e6e1fef1ebf9ece7f9ede4e7d3d0cabdbacdc7d1"
+  ],
+  "Colton1070": [
+   "f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+   "f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0",
+   "f0f0f0f0f0f0db6552db6552db6552db6552f0ededf0f0f0",
+   "f0f0f0f0f0f0db6552e4a195e4a196db6552f0ededf0f0f0",
+   "eee0dee9c1badb6552e9c0b9e9c1badb6552e9bfb8eee0dd",
+   "e9c1badb6552db6552e9c0b9e9c1badb6552db6552e9c0b9",
+   "f0efeff0ededdb6552db6552db6552db6552f0eaeaf0efef",
+   "f0f0f0f0f0f0e9c0b9e9c0b9e9c0b9e9c0b9f0efeff0f0f0"
+  ],
+  "wakanachan": [
+   "543e34402d288b7d69cfb595d6be99a2977d3a29263d2825",
+   "3d2b298b6a55f9c6a7fcd1b1f4a38ffbe7c0b8a9894d3023",
+   "49352fdeb087f0c498f9e7baf4d6abf7e6bcf2d9b16d4f43",
+   "57433beab084efb385f2c093f2c092f2cfa2eab68a8e6d5c",
+   "5d4439e0a77be5bf9cf7d4ace3c8aaf0c79becb68ba2765e",
+   "4d352eca9069f5dfc4fef4dafff4daf0ca9ee1a67d966d5b",
+   "5f45389e7455b28767d2b39cebb492dbb1877e5a42452921",
+   "7f55608d6453c38d71eca180f0a07eca93749a725098663c"
+  ],
+  "MoorCorPa": [
+   "fca490feaa96f4a28fcd7866f8a68edb8462e17c5af5ac90",
+   "fc9c90f69b92cd827ff99d92e98e6de27f51e78559e47c54",
+   "dea397dda49cf8948bfbb7a6df8965e39675e29d7edd8059",
+   "d9a2a7fad9cfe5a1abb77172df8562e0a088feebdfe69871",
+   "bf8e8bfce3d8d4a39d5e4040d18168efa591f6c8b9f2b19f",
+   "725250916c687d5e5a60494aedc4affcd9bdf5caadf2bfa4",
+   "6a565759444459454580695cf2ccb9f9ccb2f8d6b9fcd8b9",
+   "d4b09f9972668c7472c9cd99eeb89bfab48efad6aff8d2ac"
+  ],
+  "twoone-3": [
+   "000000000000000000000000000000000000000000000000",
+   "0000000000003c2300bb7505bb7a0a3b2301000000000000",
+   "000000835905fcaa14ffa308feac17f8a410714902000000",
+   "000000955d04d98e12eca10fce9617a66b0c6e4000000000",
+   "000000935503d78205d98406a167089f63076d4709000000",
+   "000000775009d68e12d6991ba0680aa16909573202000000",
+   "000000000000311c009d5f0375500a241400000000000000",
+   "000000000000000000000000000000000000000000000000"
+  ],
+  "neverforward": [
+   "08842d087c2a08822c0aa5380aa939099b340aa438088f30",
+   "099c340f7328067327077b2a088b2f07872d07712608822c",
+   "728e451f772c96754173793c198b321f772c1c702a1b782c",
+   "ae6942b86e45ae6942ac6842a4633ea866409d5f3cae6942",
+   "bd7147ae6942c27449ae69429d5f3c9d603d9d5f3caf6a42",
+   "b36c44aa6740a2633e9d5f3ca76540b26b449d5f3da76540",
+   "b46c44a1623d9d5f3c9e603dac6841a5653fa76440a3633e",
+   "b66e45a3633eb36c449d5f3cb56d45a6643faa6740b77956"
+  ],
+  "kuangby": [
+   "f0f0f0f0f0f0e6c4bce6c4bce6c4bce6c4bcf0efeff0f0f0",
+   "f0f0f0f0f0f0d26e58d26e58d26e58d26e58efeeedf0f0f0",
+   "e6c4bcd26e58d26e58e6c1b9e6c2bad26e58d26e58e6c3bb",
+   "ede1dee6c3bbd26e58e6c3bbe6c4bcd26e58e5c2b9ede0de",
+   "f0f0f0f0f0f0d26e58e6c3bbe6c4bcd26e58efeeedf0f0f0",
+   "f0f0f0f0f0f0d26e58e6c3bbe6c4bcd26e58efeeedf0f0f0",
+   "f0f0f0f0f0f0d26e58d26e58d26e58d26e58efeeedf0f0f0",
+   "f0f0f0f0f0f0e6c3bbe6c3bbe6c3bbe6c3bbf0efeff0f0f0"
+  ],
+  "StrafeIQ": [
+   "50169109091a240927452a6452467f453a693704864b00b9",
+   "2609550b0a18372f52ac99d0d5cce8b49ed44c2c64370674",
+   "240f4a130f2a6052869a76a8d1b3e3a47ec6743b8c0a031b",
+   "110d27391e47d0a3cfe5d1e0debadeae6fa74a317115093d",
+   "140b2a271538c3a1beddd0e6d4c4deaa7daa210f4d26085d",
+   "1e0c3d170a3a5c3e5eb29fbbb4a2c14b346811074f28095f",
+   "1509281207254a2e492515272a1f391b0853452485311472",
+   "04071c19092c1c071a3f203b633568945db7954fcd6836ae"
+  ]
+ },
+ "release_marks": [
+  [
+   "2023-12-01",
+   "LeviLamina",
+   "v0.1.0"
+  ],
+  [
+   "2025-01-25",
+   "LeviLamina",
+   "v1.0.0"
+  ],
+  [
+   "2026-04-06",
+   "LeviLamina",
+   "v26.10.0"
+  ],
+  [
+   "2026-07-04",
+   "LeviLamina",
+   "v26.20.0"
+  ],
+  [
+   "2026-09-06",
+   "LeviLamina",
+   "v26.32.0"
+  ],
+  [
+   "2026-09-08",
+   "LeviLamina",
+   "v26.40.0"
+  ],
+  [
+   "2026-09-18",
+   "LeviLamina",
+   "v26.51.0"
+  ]
+ ],
+ "people": [
+  [
+   "ShrBox",
+   4296
+  ],
+  [
+   "dreamguxiang",
+   1765
+  ],
+  [
+   "OEOTYAN",
+   1677
+  ],
+  [
+   "futrime",
+   815
+  ],
+  [
+   "yqs112358",
+   750
+  ],
+  [
+   "xiaoqch",
+   673
+  ],
+  [
+   "RimuruChan",
+   538
+  ],
+  [
+   "Pd233",
+   383
+  ],
+  [
+   "Jaciezyt",
+   365
+  ],
+  [
+   "KawaiiNahida",
+   313
+  ],
+  [
+   "RadiantByte",
+   286
+  ],
+  [
+   "Lovelylavender4",
+   247
+  ],
+  [
+   "Dofes",
+   244
+  ],
+  [
+   "moxisuki",
+   175
+  ],
+  [
+   "zimuya4153",
+   170
+  ],
+  [
+   "lgc2333",
+   158
+  ],
+  [
+   "Redbeanw44602",
+   132
+  ],
+  [
+   "quizhizhe",
+   113
+  ],
+  [
+   "harry-xi",
+   96
+  ],
+  [
+   "residua1",
+   96
+  ],
+  [
+   "PA733",
+   76
+  ],
+  [
+   "S3v3Nice",
+   48
+  ],
+  [
+   "killcerr",
+   44
+  ],
+  [
+   "HuoHuas001",
+   38
+  ],
+  [
+   "leoweyr",
+   33
+  ],
+  [
+   "KobeBryant114514",
+   31
+  ],
+  [
+   "LukasPAH",
+   25
+  ],
+  [
+   "wzyyyyyyy",
+   23
+  ],
+  [
+   "LazuliKao",
+   20
+  ],
+  [
+   "cryx233",
+   14
+  ],
+  [
+   "wu-vincent",
+   13
+  ],
+  [
+   "xianyubb",
+   12
+  ],
+  [
+   "engsr6982",
+   12
+  ],
+  [
+   "Colton1070",
+   9
+  ],
+  [
+   "wakanachan",
+   8
+  ],
+  [
+   "MoorCorPa",
+   8
+  ],
+  [
+   "twoone-3",
+   8
+  ],
+  [
+   "neverforward",
+   7
+  ],
+  [
+   "kuangby",
+   6
+  ],
+  [
+   "StrafeIQ",
+   4
+  ],
+  [
+   "kkj9333",
+   4
+  ],
+  [
+   "AlexXuCN",
+   4
+  ],
+  [
+   "dmblock",
+   4
+  ],
+  [
+   "alvinqid",
+   4
+  ],
+  [
+   "ddf8196",
+   3
+  ],
+  [
+   "Intoprelised",
+   3
+  ],
+  [
+   "yangyangzhong82",
+   3
+  ],
+  [
+   "yhzx233",
+   3
+  ],
+  [
+   "LordBombardir",
+   2
+  ],
+  [
+   "Milvona",
+   2
+  ],
+  [
+   "n15421",
+   2
+  ],
+  [
+   "ExquisiteCore",
+   2
+  ],
+  [
+   "ambiennt",
+   2
+  ],
+  [
+   "MCBEPluginModer",
+   2
+  ],
+  [
+   "VincentX0905",
+   2
+  ],
+  [
+   "Nico6719",
+   2
+  ],
+  [
+   "XY0797",
+   2
+  ],
+  [
+   "faizul726",
+   2
+  ],
+  [
+   "indpriyanshuraj",
+   2
+  ],
+  [
+   "Viablecobra",
+   2
+  ]
+ ]
+}
