@@ -1,10 +1,6 @@
 <p align="center">
   <a href="https://levimc.org">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="./levimc-portfolio-dark.svg">
-      <source media="(prefers-color-scheme: light)" srcset="./levimc-portfolio-light.svg">
-      <img src="./levimc-portfolio-dark.svg" width="100%" alt="LeviMC — mod Bedrock your way. LeviLamina, LegacyScriptEngine, LeviLaunchroid, LeviLauncher and the open-source Bedrock modding ecosystem." />
-    </picture>
+    <img src="./levimc-monet.svg" width="100%" alt="LeviMC: Monet Edition — a Minecraft world painted in Monet's style that grows from 2D to isometric to 3D: the history from LiteLoaderBDS to LeviLamina, LeviLamina, LegacyScriptEngine, LeviStone, LeviLaunchroid and LeviLauncher, mods, tooling, the people and live statistics, refreshed weekly." />
   </a>
 </p>
 
