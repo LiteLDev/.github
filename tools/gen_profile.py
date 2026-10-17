@@ -1347,7 +1347,7 @@ def scene_finale():
     out.append(svg)
     ta, tb = t0 + 0.6, t0 + 14.0
     rows = [("Discord", "discord.gg/v5R5P4vRZk"), ("Telegram", "t.me/LiteLoader"),
-            ("QQ", "656669024 · 937236109 · 850517473"), ("Docs", "lamina.levimc.org · lse.levimc.org"),
+            ("QQ", "656669024 · 937236109 · 850517473"), ("Docs", "docs.levimc.org"),
             ("Translate", "Crowdin"), ("Website", "levimc.org")]
     bx_, by_ = 640, 110
     page = book(bx_, by_, 520, 236) + ptext(bx_ + 260, by_ + 14, "Join us", 3, INK, shadow=False, anchor="middle")

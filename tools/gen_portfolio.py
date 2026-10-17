@@ -1041,7 +1041,7 @@ def scene_finale():
              f'stroke="{G400}" stroke-opacity="{0.8 if hl else 0.35}"/>' + text(x + w / 2, 509, c, "chipa" if hl else "chip", "middle"))
         out.append(reveal(b, t_in + 1.7 + 0.09 * k, t_out, dy=10))
         x += w + 10
-    out.append(reveal(text(600, 546, "levimc.org   ·   lamina.levimc.org   ·   Discord · Telegram · QQ", "codeg", "middle"),
+    out.append(reveal(text(600, 546, "levimc.org   ·   docs.levimc.org   ·   Discord · Telegram · QQ", "codeg", "middle"),
                       t_in + 2.5, t_out, dy=6))
     return "\n".join(out)
 

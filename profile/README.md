@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://levimc.org"><b>levimc.org</b></a> ·
-  <a href="https://lamina.levimc.org">Docs</a> ·
+  <a href="https://docs.levimc.org/LeviLamina">Docs</a> ·
   <a href="https://github.com/LiteLDev/LeviLamina">LeviLamina</a> ·
   <a href="https://github.com/LiteLDev/LegacyScriptEngine">LegacyScriptEngine</a> ·
   <a href="https://github.com/LiteLDev/LeviLaunchroid">LeviLaunchroid</a> ·
