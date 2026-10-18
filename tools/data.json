@@ -554,7 +554,7 @@
     ]
    ]
   },
-  "bedrinth": {
+  "pkg.levimc.org": {
    "stars": 6,
    "forks": 5,
    "created": "2023-08-30",
@@ -1030,7 +1030,7 @@
   ],
   [
    "2023-08-30",
-   "bedrinth",
+   "pkg.levimc.org",
    false
   ],
   [
