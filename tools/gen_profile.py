@@ -1116,7 +1116,7 @@ def scene_mods():
 TOOLS = [("levilamina-mod-template", "command", "mod template"), ("docker-levilamina-server", "iron", "Docker"),
          ("bdsdown", "lapis", "bdsdown"), ("PreLoader", "obsidian", "PreLoader"), ("PeEditor", "command", "PeEditor"),
          ("bedrock-runtime-data", "bookshelf", "runtime data"), ("lipr", "emerald", "lip registry"),
-         ("bedrinth", "diamond", "bedrinth")]
+         ("pkg.levimc.org", "diamond", "LeviMC Mods")]
 
 
 def scene_tools():
@@ -1168,7 +1168,7 @@ def group_members():
         "SCRIPTING": top("LegacyScriptEngine", 3) + top("legacy-script-engine-api", 3) + top("LeviStone", 2),
         "LAUNCHERS": top("LeviLaunchroid", 3) + top("LeviLauncher", 3),
         "MODS": top("LeviOptimize", 2) + top("MoreDimensions", 1) + top("LeviAntiCheat", 2) + top("LeviSchematic", 1),
-        "TOOLING": top("levilamina-mod-template", 2) + top("docker-levilamina-server", 2) + top("bedrinth", 2)
+        "TOOLING": top("levilamina-mod-template", 2) + top("docker-levilamina-server", 2) + top("pkg.levimc.org", 2)
                    + top("PeEditor", 1),
     }
     out = {}

@@ -25,7 +25,7 @@ OUT = os.path.join(HERE, "data.json")
 
 FEATURED = ["LeviLamina", "LegacyScriptEngine", "LeviLaunchroid", "LeviLauncher", "LeviStone", "LeviOptimize",
             "LeviAntiCheat", "MoreDimensions", "LeviSchematic", "CrashLogger", "levilamina-mod-template",
-            "docker-levilamina-server", "LiteLoaderBDS", "bedrinth", "LegacyMoney", "LegacyRemoteCall",
+            "docker-levilamina-server", "LiteLoaderBDS", "pkg.levimc.org", "LegacyMoney", "LegacyRemoteCall",
             "legacy-script-engine-api", "bdsdown", "PreLoader", "PeEditor", "lipr", "bedrock-runtime-data"]
 YEARLY = ["LiteLoaderBDS", "LeviLamina"]  # commits per calendar year
 JOIN_REPOS = ["LiteLoaderBDS", "LeviLamina", "LegacyScriptEngine", "LeviLaunchroid", "LeviLauncher", "LeviStone",
