@@ -725,7 +725,7 @@ def scene_title():
              + ptext(600, 267, "History", 2, YELLOW, anchor="middle"))
     out.append(only(hover, 9.0, t1 + 0.6))
     out.append(show(ptext(16, 574, f"LeviMC {LL_VER}", 2, WHITE), 1.0, t1 - 0.3))
-    out.append(show(ptext(1184, 574, "Copyright LeviMC. Not affiliated with Mojang.", 2, WHITE, anchor="end"), 1.0,
+    out.append(show(ptext(1184, 574, "Copyright LeviMC.", 2, WHITE, anchor="end"), 1.0,
                     t1 - 0.3))
     return scene("".join(out), t0, t1, first=True)
 
@@ -1363,7 +1363,7 @@ def scene_finale():
                           anchor="middle"), tc + 1.0, T - 0.2, dy=6))
     out.append(show(ptext(600, 146, f"levimc.org  ·  data as of {D['as_of']}", 2, AQUA,
                           anchor="middle"), tc + 1.8, T - 0.2, dy=6))
-    out.append(show(ptext(600, 172, "Thanks for playing.  Not affiliated with Mojang Studios or Microsoft.", 2,
+    out.append(show(ptext(600, 172, "Thanks for playing.", 2,
                           "#f0e8d8", anchor="middle"), tc + 2.6, T - 0.2, dy=6))
     return scene("".join(out), t0, t1, last=True)
 
