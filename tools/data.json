@@ -1,36 +1,36 @@
 {
- "as_of": "2026-10-26",
+ "as_of": "2026-11-02",
  "org": {
   "name": "LeviMC",
-  "public_repos": 73,
-  "followers": 439,
-  "stars": 3691,
+  "public_repos": 68,
+  "followers": 440,
+  "stars": 3724,
   "public_members": 13,
   "contributors": 101
  },
  "repos": {
   "LeviLamina": {
-   "stars": 1702,
-   "forks": 129,
+   "stars": 1705,
+   "forks": 131,
    "created": "2021-01-27",
    "archived": false,
    "language": "C++",
    "description": "A lightweight, modular and versatile mod loader for Minecraft Bedrock Edition, formerly known as LiteLoaderBDS",
-   "releases": 135,
-   "downloads": 76761,
-   "latest": "v26.51.8",
-   "latest_date": "2026-10-24",
+   "releases": 136,
+   "downloads": 79596,
+   "latest": "v26.51.9",
+   "latest_date": "2026-10-27",
    "first_release": "2023-12-01",
-   "commits": 3142,
+   "commits": 3195,
    "contributors": 30,
    "top": [
     [
      "OEOTYAN",
-     1288
+     1297
     ],
     [
      "ShrBox",
-     884
+     920
     ],
     [
      "Lovelylavender4",
@@ -42,7 +42,7 @@
     ],
     [
      "futrime",
-     151
+     157
     ],
     [
      "Dofes",
@@ -54,7 +54,7 @@
     ],
     [
      "zimuya4153",
-     55
+     57
     ]
    ]
   },
@@ -65,21 +65,21 @@
    "archived": false,
    "language": "C++",
    "description": "A plugin engine for running LLSE plugins on LeviLamina",
-   "releases": 149,
-   "downloads": 52765,
-   "latest": "v0.22.3",
-   "latest_date": "2026-10-11",
+   "releases": 150,
+   "downloads": 54309,
+   "latest": "v0.22.4",
+   "latest_date": "2026-10-31",
    "first_release": "2024-02-04",
-   "commits": 1208,
+   "commits": 1213,
    "contributors": 21,
    "top": [
     [
      "ShrBox",
-     926
+     927
     ],
     [
      "futrime",
-     127
+     129
     ],
     [
      "xiaoqch",
@@ -108,23 +108,23 @@
    ]
   },
   "LeviLaunchroid": {
-   "stars": 651,
-   "forks": 171,
+   "stars": 668,
+   "forks": 175,
    "created": "2025-03-31",
    "archived": false,
    "language": "Java",
    "description": "A launcher designed for Minecraft Bedrock Edition on Android",
-   "releases": 96,
-   "downloads": 827002,
-   "latest": "v1.5.27",
-   "latest_date": "2026-10-11",
+   "releases": 97,
+   "downloads": 854792,
+   "latest": "v1.6.0",
+   "latest_date": "2026-10-27",
    "first_release": "2025-05-06",
-   "commits": 456,
+   "commits": 463,
    "contributors": 12,
    "top": [
     [
      "RadiantByte",
-     273
+     276
     ],
     [
      "dreamguxiang",
@@ -132,7 +132,7 @@
     ],
     [
      "futrime",
-     6
+     10
     ],
     [
      "alvinqid",
@@ -157,18 +157,18 @@
    ]
   },
   "LeviLauncher": {
-   "stars": 439,
-   "forks": 92,
+   "stars": 450,
+   "forks": 95,
    "created": "2025-11-13",
    "archived": false,
    "language": "TypeScript",
    "description": "Minecraft Bedrock Edition GDK Launcher for Windows",
-   "releases": 51,
-   "downloads": 229401,
-   "latest": "v0.3.13",
-   "latest_date": "2026-06-26",
+   "releases": 54,
+   "downloads": 231446,
+   "latest": "v1.0.6",
+   "latest_date": "2026-11-02",
    "first_release": "2025-11-13",
-   "commits": 439,
+   "commits": 456,
    "contributors": 9,
    "top": [
     [
@@ -177,15 +177,15 @@
     ],
     [
      "futrime",
-     8
+     14
+    ],
+    [
+     "ShrBox",
+     13
     ],
     [
      "neverforward",
      7
-    ],
-    [
-     "ShrBox",
-     2
     ],
     [
      "kazaminosuke",
@@ -217,7 +217,7 @@
    "latest": "v0.11.13",
    "latest_date": "2026-10-07",
    "first_release": "2026-03-28",
-   "commits": 143,
+   "commits": 145,
    "contributors": 6,
    "top": [
     [
@@ -233,12 +233,12 @@
      7
     ],
     [
-     "KawaiiNahida",
+     "futrime",
      4
     ],
     [
-     "futrime",
-     3
+     "KawaiiNahida",
+     4
     ],
     [
      "dreamguxiang",
@@ -254,11 +254,11 @@
    "language": "C++",
    "description": "A performance optimization plugin for Minecraft Bedrock Server",
    "releases": 37,
-   "downloads": 6884,
+   "downloads": 7045,
    "latest": "v0.17.0",
    "latest_date": "2026-09-18",
    "first_release": "2024-01-20",
-   "commits": 145,
+   "commits": 146,
    "contributors": 7,
    "top": [
     [
@@ -275,7 +275,7 @@
     ],
     [
      "futrime",
-     5
+     6
     ],
     [
      "yhzx233",
@@ -299,11 +299,11 @@
    "language": null,
    "description": "Powerful anti-cheating for LeviLamina(Bedrock Dedicated Server)",
    "releases": 64,
-   "downloads": 1350,
+   "downloads": 1393,
    "latest": "v0.17.6",
    "latest_date": "2026-10-22",
    "first_release": "2024-04-16",
-   "commits": 115,
+   "commits": 116,
    "contributors": 7,
    "top": [
     [
@@ -312,7 +312,7 @@
     ],
     [
      "futrime",
-     9
+     10
     ],
     [
      "KawaiiNahida",
@@ -344,11 +344,11 @@
    "language": "C++",
    "description": "Multi dimensions on Bedrock Dedicated Server",
    "releases": 25,
-   "downloads": 1529,
+   "downloads": 1738,
    "latest": "v0.15.0",
    "latest_date": "2026-10-12",
    "first_release": "2024-03-08",
-   "commits": 132,
+   "commits": 133,
    "contributors": 5,
    "top": [
     [
@@ -361,7 +361,7 @@
     ],
     [
      "futrime",
-     10
+     11
     ],
     [
      "Dofes",
@@ -374,7 +374,7 @@
    ]
   },
   "LeviSchematic": {
-   "stars": 21,
+   "stars": 22,
    "forks": 5,
    "created": "2026-03-17",
    "archived": false,
@@ -385,12 +385,12 @@
    "latest": null,
    "latest_date": null,
    "first_release": null,
-   "commits": 37,
+   "commits": 40,
    "contributors": 3,
    "top": [
     [
      "quizhizhe",
-     28
+     31
     ],
     [
      "ShrBox",
@@ -409,17 +409,17 @@
    "archived": false,
    "language": "C++",
    "description": "Show crash log of LeviLamina",
-   "releases": 11,
-   "downloads": 31896,
-   "latest": "v1.3.3",
-   "latest_date": "2026-01-16",
+   "releases": 12,
+   "downloads": 32641,
+   "latest": "v1.4.0",
+   "latest_date": "2026-11-02",
    "first_release": "2023-04-03",
-   "commits": 52,
+   "commits": 54,
    "contributors": 4,
    "top": [
     [
      "ShrBox",
-     30
+     32
     ],
     [
      "Dofes",
@@ -496,7 +496,7 @@
    "latest": "v0.8.7",
    "latest_date": "2026-04-14",
    "first_release": "2023-12-01",
-   "commits": 89,
+   "commits": 90,
    "contributors": 5,
    "top": [
     [
@@ -505,7 +505,7 @@
     ],
     [
      "futrime",
-     39
+     40
     ],
     [
      "dmblock",
@@ -529,7 +529,7 @@
    "language": "C++",
    "description": "A legacy plugin loader for Minecraft Bedrock Dedicated Server",
    "releases": 99,
-   "downloads": 19952,
+   "downloads": 19983,
    "latest": "2.16.2",
    "latest_date": "2023-10-09",
    "first_release": "2023-07-20",
@@ -571,7 +571,7 @@
    ]
   },
   "levimc.org": {
-   "stars": 0,
+   "stars": 1,
    "forks": 1,
    "created": "2026-01-20",
    "archived": false,
@@ -582,12 +582,12 @@
    "latest": null,
    "latest_date": null,
    "first_release": null,
-   "commits": 259,
-   "contributors": 10,
+   "commits": 303,
+   "contributors": 11,
    "top": [
     [
      "futrime",
-     112
+     143
     ],
     [
      "ShrBox",
@@ -620,19 +620,19 @@
    ]
   },
   "LegacyMoney": {
-   "stars": 11,
+   "stars": 12,
    "forks": 4,
    "created": "2023-12-29",
    "archived": false,
    "language": "C++",
    "description": "LLMoney, but adapted to LeviLamina",
    "releases": 45,
-   "downloads": 19227,
+   "downloads": 19731,
    "latest": "v0.22.0",
    "latest_date": "2026-09-18",
    "first_release": "2023-12-31",
-   "commits": 121,
-   "contributors": 3,
+   "commits": 122,
+   "contributors": 4,
    "top": [
     [
      "ShrBox",
@@ -640,6 +640,10 @@
     ],
     [
      "Lovelylavender4",
+     1
+    ],
+    [
+     "futrime",
      1
     ],
     [
@@ -656,11 +660,11 @@
    "language": "C++",
    "description": "Remote call module for LegacyScriptEngine",
    "releases": 38,
-   "downloads": 19555,
+   "downloads": 19873,
    "latest": "v0.22.0",
    "latest_date": "2026-09-18",
    "first_release": "2024-02-04",
-   "commits": 86,
+   "commits": 87,
    "contributors": 4,
    "top": [
     [
@@ -669,7 +673,7 @@
     ],
     [
      "futrime",
-     3
+     4
     ],
     [
      "engsr6982",
@@ -738,7 +742,7 @@
    "language": "Go",
    "description": "Downloader for Minecraft BDS",
    "releases": 22,
-   "downloads": 27156,
+   "downloads": 27525,
    "latest": "v1.2.1",
    "latest_date": "2026-03-29",
    "first_release": "2023-02-09",
@@ -774,17 +778,17 @@
    "archived": false,
    "language": null,
    "description": "A library preloader for loading LeviLamina",
-   "releases": 44,
-   "downloads": 64893,
-   "latest": "v1.16.5",
-   "latest_date": "2026-10-12",
+   "releases": 46,
+   "downloads": 66548,
+   "latest": "v1.16.7",
+   "latest_date": "2026-11-02",
    "first_release": "2023-02-04",
-   "commits": 19,
+   "commits": 21,
    "contributors": 3,
    "top": [
     [
      "ShrBox",
-     14
+     16
     ],
     [
      "RimuruChan",
@@ -804,11 +808,11 @@
    "language": "C++",
    "description": "A tool to inject PreLoader to Minecraft Bedrock Dedicated Server",
    "releases": 19,
-   "downloads": 43243,
+   "downloads": 44097,
    "latest": "v3.9.2",
    "latest_date": "2026-10-09",
    "first_release": "2023-03-27",
-   "commits": 46,
+   "commits": 47,
    "contributors": 6,
    "top": [
     [
@@ -825,7 +829,7 @@
     ],
     [
      "futrime",
-     2
+     3
     ],
     [
      "KawaiiNahida",
@@ -837,35 +841,6 @@
     ]
    ]
   },
-  "lipr": {
-   "stars": 2,
-   "forks": 1,
-   "created": "2026-02-01",
-   "archived": false,
-   "language": "Python",
-   "description": "The registry for lip",
-   "releases": 0,
-   "downloads": 0,
-   "latest": null,
-   "latest_date": null,
-   "first_release": null,
-   "commits": 933,
-   "contributors": 3,
-   "top": [
-    [
-     "futrime",
-     16
-    ],
-    [
-     "ShrBox",
-     8
-    ],
-    [
-     "MRUIAW",
-     4
-    ]
-   ]
-  },
   "bedrock-runtime-data": {
    "stars": 18,
    "forks": 1,
@@ -873,17 +848,17 @@
    "archived": false,
    "language": null,
    "description": null,
-   "releases": 163,
-   "downloads": 79301,
-   "latest": "v26.51.1-server.11",
-   "latest_date": "2026-10-12",
+   "releases": 170,
+   "downloads": 83924,
+   "latest": "v26.60.5-client.2",
+   "latest_date": "2026-11-02",
    "first_release": "2024-08-07",
-   "commits": 105,
+   "commits": 108,
    "contributors": 3,
    "top": [
     [
      "ShrBox",
-     99
+     102
     ],
     [
      "RimuruChan",
@@ -1199,7 +1174,7 @@
   ],
   [
    "2026-02-01",
-   "lipr",
+   "lipr.levimc.org",
    false
   ],
   [
@@ -1220,7 +1195,7 @@
   [
    "2026-10-09",
    "mimalloc",
-   false
+   true
   ],
   [
    "2026-10-17",
@@ -1233,33 +1208,8 @@
    false
   ],
   [
-   "2026-10-20",
-   "BarelyEnoughItems",
-   false
-  ],
-  [
-   "2026-10-21",
-   "AlleviatedBackpacks",
-   false
-  ],
-  [
-   "2026-10-21",
-   "Bedstones",
-   false
-  ],
-  [
-   "2026-10-21",
-   "BeetrootSkin",
-   false
-  ],
-  [
    "2026-10-22",
-   "LeviHeadlessInput",
-   false
-  ],
-  [
-   "2026-10-24",
-   "LeviChan",
+   "BeDD",
    false
   ]
  ],
@@ -1274,7 +1224,7 @@
    "2023": 657,
    "2024": 1135,
    "2025": 642,
-   "2026": 708
+   "2026": 761
   }
  },
  "joined": {
@@ -1782,15 +1732,15 @@
    "b46c44a1623d9d5f3c9e603dac6841a5653fa76440a3633e",
    "b66e45a3633eb36c449d5f3cb56d45a6643faa6740b77956"
   ],
-  "StrafeIQ": [
-   "50169109091a240927452a6452467f453a693704864b00b9",
-   "2609550b0a18372f52ac99d0d5cce8b49ed44c2c64370674",
-   "240f4a130f2a6052869a76a8d1b3e3a47ec6743b8c0a031b",
-   "110d27391e47d0a3cfe5d1e0debadeae6fa74a317115093d",
-   "140b2a271538c3a1beddd0e6d4c4deaa7daa210f4d26085d",
-   "1e0c3d170a3a5c3e5eb29fbbb4a2c14b346811074f28095f",
-   "1509281207254a2e492515272a1f391b0853452485311472",
-   "04071c19092c1c071a3f203b633568945db7954fcd6836ae"
+  "MRUIAW": [
+   "f6f6f6aba8aad5d6d4f6f6f6f3f1f2616162f6f6f6f6f6f6",
+   "f6f6f69d9d9fc1c4c0eeeadfced1cea6a4a3e1e4e1f6f6f6",
+   "f6f6f6d3d3d2e7e2d6e7dfd3e7dfd19c9e9fb7bbbcf6f6f6",
+   "f6f6f6e7e6e1b4a094d9cdbe6c786ca4a09d709f9df6f6f6",
+   "f6f6f6dfdedf8a8d8ab0b49bcdc6abd7cbbe7c9491f5f6f5",
+   "f6f6f6e0e1e2bfc5c0bdafa6b28780a7a29f92a0a9f1f2f1",
+   "f0edebae998adddbd8979aa237465d2936478093a0eaecea",
+   "edeaeacda986d8d1c851647e3143572733448296a6d6d9d7"
   ]
  },
  "release_marks": [
@@ -1833,11 +1783,11 @@
  "people": [
   [
    "ShrBox",
-   4416
+   4481
   ],
   [
    "futrime",
-   2238
+   2064
   ],
   [
    "dreamguxiang",
@@ -1845,7 +1795,7 @@
   ],
   [
    "OEOTYAN",
-   1680
+   1690
   ],
   [
    "yqs112358",
@@ -1873,7 +1823,7 @@
   ],
   [
    "RadiantByte",
-   307
+   310
   ],
   [
    "residua1",
@@ -1889,7 +1839,7 @@
   ],
   [
    "zimuya4153",
-   194
+   196
   ],
   [
    "moxisuki",
@@ -1909,7 +1859,7 @@
   ],
   [
    "quizhizhe",
-   113
+   116
   ],
   [
    "PA733",
@@ -1917,7 +1867,7 @@
   ],
   [
    "killcerr",
-   48
+   49
   ],
   [
    "S3v3Nice",
@@ -1988,6 +1938,10 @@
    7
   ],
   [
+   "MRUIAW",
+   7
+  ],
+  [
    "StrafeIQ",
    4
   ],
@@ -2005,10 +1959,6 @@
   ],
   [
    "AlexXuCN",
-   4
-  ],
-  [
-   "MRUIAW",
    4
   ],
   [
