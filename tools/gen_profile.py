@@ -79,7 +79,7 @@ def comma(n):
 
 
 LL_VER = R("LeviLamina", "latest") or "v26"
-DL_LAUNCH = (R("LeviLaunchroid", "downloads") or 0) + (R("LeviLauncher", "downloads") or 0)
+DL_LAUNCH = (R("LeviLauncher-Android", "downloads") or 0) + (R("LeviLauncher", "downloads") or 0)
 
 
 # ------------------------------------------------------------------------------- SMIL basics
@@ -754,7 +754,7 @@ YEARS = [
         ("2026-01-25", "toast", "Client support", "sprout")]),
 ]
 NEW_REPO_TOASTS = {"LeviOptimize": "feather", "MoreDimensions": "eye", "LeviAntiCheat": "shield",
-                   "LegacyRemoteCall": "pearl", "LeviLaunchroid": "minecart", "LeviLauncher": "minecart",
+                   "LegacyRemoteCall": "pearl", "LeviLauncher-Android": "minecart", "LeviLauncher": "minecart",
                    "LeviSchematic": "map", "levimc.org": "compass", "lipr": "chest", "docker-levilamina-server": "chest",
                    "bedrock-runtime-data": "book", "CrashLogger": "tnt", "levilamina-mod-template": "crafting",
                    "LegacyMoney": "emerald"}
@@ -1043,12 +1043,12 @@ def scene_launch():
     out.append(mc_title("Launchers", "play Bedrock anywhere", t0 + 0.3, t0 + 2.6, y=34, size=5, col=GREEN))
     p1 = iso_pt(ox, oy, 0.5, 10.5, 4)
     p2 = iso_pt(ox, oy, 10.5, 0.5, 5)
-    out.append(show(nametag(p1[0], p1[1] - 60, "LeviLaunchroid", "Android"), t0 + 2.6, t1 - 0.4, dy=6))
+    out.append(show(nametag(p1[0], p1[1] - 60, "LeviLauncher-Android", "Android"), t0 + 2.6, t1 - 0.4, dy=6))
     out.append(show(nametag(p2[0], p2[1] - 60, "LeviLauncher", "Windows · GDK"), t0 + 2.8, t1 - 0.4, dy=6))
     l1 = [("Import your own APK; play without", GRAY), ("installing; isolated versions; .so mods", GRAY),
-          (f"★ {R('LeviLaunchroid', 'stars')}  ·  {k_fmt(R('LeviLaunchroid', 'downloads'))} downloads", YELLOW),
-          (f"latest {R('LeviLaunchroid', 'latest')}", GREEN)]
-    tt, _, _ = item_tooltip(30, 392, "LeviLaunchroid", l1)
+          (f"★ {R('LeviLauncher-Android', 'stars')}  ·  {k_fmt(R('LeviLauncher-Android', 'downloads'))} downloads", YELLOW),
+          (f"latest {R('LeviLauncher-Android', 'latest')}", GREEN)]
+    tt, _, _ = item_tooltip(30, 392, "LeviLauncher-Android", l1)
     out.append(show(tt, t0 + 3.0, t1 - 0.4, dy=8))
     l2 = [("The launcher for the new GDK", GRAY), ("builds of Bedrock on Windows", GRAY),
           (f"★ {R('LeviLauncher', 'stars')}  ·  {k_fmt(R('LeviLauncher', 'downloads'))} downloads", YELLOW),
@@ -1166,7 +1166,7 @@ def group_members():
     g = {
         "LOADER": top("LeviLamina", 6),
         "SCRIPTING": top("LegacyScriptEngine", 3) + top("legacy-script-engine-api", 3) + top("LeviStone", 2),
-        "LAUNCHERS": top("LeviLaunchroid", 3) + top("LeviLauncher", 3),
+        "LAUNCHERS": top("LeviLauncher-Android", 3) + top("LeviLauncher", 3),
         "MODS": top("LeviOptimize", 2) + top("MoreDimensions", 1) + top("LeviAntiCheat", 2) + top("LeviSchematic", 1),
         "TOOLING": top("levilamina-mod-template", 2) + top("docker-levilamina-server", 2) + top("levimc.org", 2)
                    + top("PeEditor", 1),
@@ -1238,7 +1238,7 @@ def scene_people():
 
 
 TOWERS = [
-    ("LeviLamina", "emerald"), ("LeviLaunchroid", "lapis"), ("LeviLauncher", "diamond"),
+    ("LeviLamina", "emerald"), ("LeviLauncher-Android", "lapis"), ("LeviLauncher", "diamond"),
     ("LegacyScriptEngine", "redstone"), ("LeviOptimize", "gold"), ("LeviAntiCheat", "iron"),
     ("levilamina-mod-template", "planks"), ("LeviStone", "end_stone"), ("MoreDimensions", "obsidian"),
     ("LeviSchematic", "amethyst"),
@@ -1402,7 +1402,7 @@ def main():
         '<title id="ttl">LeviMC</title>',
         f'<desc id="desc">A {m}:{s:02d} animated tour of LeviMC (formerly LiteLDev) in a Minecraft world. '
         "It covers the history from LiteLoaderBDS (2021) to "
-        'LeviLamina, the LeviLamina mod loader, LegacyScriptEngine, LeviStone, the LeviLaunchroid and LeviLauncher '
+        'LeviLamina, the LeviLamina mod loader, LegacyScriptEngine, LeviStone, the LeviLauncher-Android and LeviLauncher '
         'launchers, mods, tooling, the people, live statistics and how to join.</desc>',
         defs_block(),
         '<g clip-path="url(#frm)">',

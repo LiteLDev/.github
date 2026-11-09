@@ -107,7 +107,7 @@
     ]
    ]
   },
-  "LeviLaunchroid": {
+  "LeviLauncher-Android": {
    "stars": 684,
    "forks": 183,
    "created": "2025-03-31",
@@ -1134,7 +1134,7 @@
   ],
   [
    "2025-03-31",
-   "LeviLaunchroid",
+   "LeviLauncher-Android",
    false
   ],
   [
@@ -1271,7 +1271,7 @@
   ],
   "RadiantByte": [
    "2025-05-02",
-   "LeviLaunchroid"
+   "LeviLauncher-Android"
   ],
   "KawaiiNahida": [
    "2021-06-26",

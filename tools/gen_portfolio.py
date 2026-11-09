@@ -531,7 +531,7 @@ def F_devices(p, t):
 
 # --- 05 Ecosystem: a constellation of repos ---------------------------------------------------
 NET_C = (318, 300)
-REPOS = ["LegacyScriptEngine", "LeviLaunchroid", "LeviLauncher", "LeviOptimize", "LeviAntiCheat",
+REPOS = ["LegacyScriptEngine", "LeviLauncher-Android", "LeviLauncher", "LeviOptimize", "LeviAntiCheat",
          "LeviStone", "MoreDimensions", "LeviSchematic", "CrashLogger", "PreLoader", "mod-template",
          "docker-server", "ScriptX", "LegacyMoney"]
 NODES = []
@@ -966,12 +966,12 @@ def scene_devices():
     yaw_mid = 0.3
     px = cam(((PHONE[0] + PHONE[1]) / 2, PHONE[3] + 30, -DEPTH), yaw_mid, DEV_PITCH, *DEV_C)
     dx = cam(((SCREEN[0] + SCREEN[1]) / 2, 172, -40), yaw_mid, DEV_PITCH, *DEV_C)
-    out.append(reveal(text(px[0], px[1] + 6, "LeviLaunchroid", "devl", "middle") + text(px[0], px[1] + 24, "Android", "labs", "middle"),
+    out.append(reveal(text(px[0], px[1] + 6, "LeviLauncher-Android", "devl", "middle") + text(px[0], px[1] + 24, "Android", "labs", "middle"),
                       t_in + 0.9, t_out, dy=8))
     out.append(reveal(text(dx[0], dx[1] + 6, "LeviLauncher", "devl", "middle") + text(dx[0], dx[1] + 24, "Windows · GDK", "labs", "middle"),
                       t_in + 1.1, t_out, dy=8))
-    out.append(heading("04 — LAUNCHERS", "Play Bedrock anywhere.", "LeviLaunchroid for Android · LeviLauncher for Windows (GDK).", t_in, t_out))
-    out.append(card(640, 186, 520, 92, roll(753, 9, suffix="k+"), "LeviLaunchroid · Android", "★ 610 · release downloads",
+    out.append(heading("04 — LAUNCHERS", "Play Bedrock anywhere.", "LeviLauncher-Android · LeviLauncher for Windows (GDK).", t_in, t_out))
+    out.append(card(640, 186, 520, 92, roll(753, 9, suffix="k+"), "LeviLauncher-Android", "★ 610 · release downloads",
                     t_in + 0.6, t_out, cap_x=850))
     out.append(card(640, 292, 520, 92, roll(212, 9, suffix="k+"), "LeviLauncher · Windows GDK", "★ 413 · shipped Nov 2025",
                     t_in + 0.9, t_out, cap_x=850))
@@ -1032,7 +1032,7 @@ def scene_finale():
                f'{logo_svg(gx, gy, hgt)}</g></g></g></g>')
     out.append(reveal(text(600, 440, "LeviMC", "hero2", "middle"), t_in + 1.0, t_out, dy=16))
     out.append(reveal(text(600, 472, "Open source tools for the community, by the community.", "tagline2", "middle"), t_in + 1.3, t_out, dy=10))
-    chips = ["LeviLamina", "LegacyScriptEngine", "LeviLaunchroid", "LeviLauncher", "LeviOptimize", "MoreDimensions"]
+    chips = ["LeviLamina", "LegacyScriptEngine", "LeviLauncher-Android", "LeviLauncher", "LeviOptimize", "MoreDimensions"]
     widths = [len(c) * 8.4 + 30 for c in chips]
     x = 600 - (sum(widths) + 10 * (len(chips) - 1)) / 2
     for k, (c, w) in enumerate(zip(chips, widths)):
@@ -1169,7 +1169,7 @@ def main():
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" aria-labelledby="ttl desc">',
         '<title id="ttl">LeviMC — mod Bedrock your way</title>',
         '<desc id="desc">Animated portfolio of LeviMC (formerly LiteLDev): LeviLamina mod loader (1.7k stars, 3,108 commits, '
-        '133 releases), LegacyScriptEngine (JavaScript, Lua, Python), LeviLaunchroid and LeviLauncher (over a million '
+        '133 releases), LegacyScriptEngine (JavaScript, Lua, Python), LeviLauncher-Android and LeviLauncher (over a million '
         'release downloads), and the wider open-source ecosystem.</desc>',
         DEFS,
         '<g clip-path="url(#frame)">',
