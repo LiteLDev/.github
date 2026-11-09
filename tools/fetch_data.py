@@ -23,12 +23,12 @@ API = "https://api.github.com"
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(HERE, "data.json")
 
-FEATURED = ["LeviLamina", "LegacyScriptEngine", "LeviLaunchroid", "LeviLauncher", "LeviStone", "LeviOptimize",
+FEATURED = ["LeviLamina", "LegacyScriptEngine", "LeviLauncher-Android", "LeviLauncher", "LeviStone", "LeviOptimize",
             "LeviAntiCheat", "MoreDimensions", "LeviSchematic", "CrashLogger", "levilamina-mod-template",
             "docker-levilamina-server", "LiteLoaderBDS", "levimc.org", "LegacyMoney", "LegacyRemoteCall",
             "legacy-script-engine-api", "bdsdown", "PreLoader", "PeEditor", "lipr", "bedrock-runtime-data"]
 YEARLY = ["LiteLoaderBDS", "LeviLamina"]  # commits per calendar year
-JOIN_REPOS = ["LiteLoaderBDS", "LeviLamina", "LegacyScriptEngine", "LeviLaunchroid", "LeviLauncher", "LeviStone",
+JOIN_REPOS = ["LiteLoaderBDS", "LeviLamina", "LegacyScriptEngine", "LeviLauncher-Android", "LeviLauncher", "LeviStone",
               "legacy-script-engine-api", "LeviOptimize", "MoreDimensions"]
 HEAD_COUNT = 40          # avatars for the most active people
 JOIN_COUNT = 30          # "x joined the game" for the most active people
